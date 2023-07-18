@@ -33,6 +33,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btn_open_CustomerNameForm = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
@@ -86,6 +87,7 @@
             this.btn_refresh = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -149,6 +151,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.btn_open_CustomerNameForm);
             this.groupBox1.Controls.Add(this.dateTimePicker1);
             this.groupBox1.Controls.Add(this.textBox6);
             this.groupBox1.Controls.Add(this.label24);
@@ -183,24 +187,35 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "بيانات حركة الاستلام:";
             // 
+            // btn_open_CustomerNameForm
+            // 
+            this.btn_open_CustomerNameForm.FlatAppearance.BorderSize = 0;
+            this.btn_open_CustomerNameForm.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
+            this.btn_open_CustomerNameForm.Location = new System.Drawing.Point(966, 241);
+            this.btn_open_CustomerNameForm.Name = "btn_open_CustomerNameForm";
+            this.btn_open_CustomerNameForm.Size = new System.Drawing.Size(46, 35);
+            this.btn_open_CustomerNameForm.TabIndex = 218;
+            this.btn_open_CustomerNameForm.Text = "...";
+            this.btn_open_CustomerNameForm.UseVisualStyleBackColor = true;
+            this.btn_open_CustomerNameForm.Click += new System.EventHandler(this.Btn_open_CustomerNameForm_Click);
+            // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
-            this.dateTimePicker1.Location = new System.Drawing.Point(17, 28);
+            this.dateTimePicker1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.dateTimePicker1.Location = new System.Drawing.Point(12, 35);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.dateTimePicker1.Size = new System.Drawing.Size(340, 29);
+            this.dateTimePicker1.Size = new System.Drawing.Size(340, 35);
             this.dateTimePicker1.TabIndex = 24;
             // 
             // textBox6
             // 
             this.textBox6.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox6.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
-            this.textBox6.Location = new System.Drawing.Point(17, 138);
+            this.textBox6.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.textBox6.Location = new System.Drawing.Point(12, 162);
             this.textBox6.Name = "textBox6";
-            this.textBox6.ReadOnly = true;
-            this.textBox6.Size = new System.Drawing.Size(340, 29);
+            this.textBox6.Size = new System.Drawing.Size(340, 35);
             this.textBox6.TabIndex = 23;
             this.textBox6.Text = "0";
             this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -208,11 +223,11 @@
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
-            this.label24.Location = new System.Drawing.Point(408, 138);
+            this.label24.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.label24.Location = new System.Drawing.Point(403, 162);
             this.label24.Name = "label24";
             this.label24.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label24.Size = new System.Drawing.Size(50, 22);
+            this.label24.Size = new System.Drawing.Size(65, 26);
             this.label24.TabIndex = 22;
             this.label24.Text = "الوزن:";
             // 
@@ -220,11 +235,10 @@
             // 
             this.textBox7.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox7.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
-            this.textBox7.Location = new System.Drawing.Point(17, 102);
+            this.textBox7.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.textBox7.Location = new System.Drawing.Point(12, 120);
             this.textBox7.Name = "textBox7";
-            this.textBox7.ReadOnly = true;
-            this.textBox7.Size = new System.Drawing.Size(340, 29);
+            this.textBox7.Size = new System.Drawing.Size(340, 35);
             this.textBox7.TabIndex = 21;
             this.textBox7.Text = "0";
             this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -232,11 +246,11 @@
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
-            this.label25.Location = new System.Drawing.Point(407, 104);
+            this.label25.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.label25.Location = new System.Drawing.Point(402, 122);
             this.label25.Name = "label25";
             this.label25.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label25.Size = new System.Drawing.Size(79, 22);
+            this.label25.Size = new System.Drawing.Size(102, 26);
             this.label25.TabIndex = 20;
             this.label25.Text = "أجور النقل:";
             // 
@@ -244,33 +258,32 @@
             // 
             this.textBox8.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox8.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
-            this.textBox8.Location = new System.Drawing.Point(17, 66);
+            this.textBox8.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.textBox8.Location = new System.Drawing.Point(12, 79);
             this.textBox8.Name = "textBox8";
-            this.textBox8.ReadOnly = true;
-            this.textBox8.Size = new System.Drawing.Size(340, 29);
+            this.textBox8.Size = new System.Drawing.Size(340, 35);
             this.textBox8.TabIndex = 19;
             this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
-            this.label26.Location = new System.Drawing.Point(407, 68);
+            this.label26.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.label26.Location = new System.Drawing.Point(402, 81);
             this.label26.Name = "label26";
             this.label26.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label26.Size = new System.Drawing.Size(60, 22);
+            this.label26.Size = new System.Drawing.Size(79, 26);
             this.label26.TabIndex = 18;
             this.label26.Text = "المنطقة:";
             // 
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
-            this.label28.Location = new System.Drawing.Point(407, 34);
+            this.label28.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.label28.Location = new System.Drawing.Point(402, 41);
             this.label28.Name = "label28";
             this.label28.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label28.Size = new System.Drawing.Size(51, 22);
+            this.label28.Size = new System.Drawing.Size(66, 26);
             this.label28.TabIndex = 16;
             this.label28.Text = "التاريخ";
             // 
@@ -278,11 +291,10 @@
             // 
             this.textBox9.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox9.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
-            this.textBox9.Location = new System.Drawing.Point(17, 207);
+            this.textBox9.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.textBox9.Location = new System.Drawing.Point(12, 241);
             this.textBox9.Name = "textBox9";
-            this.textBox9.ReadOnly = true;
-            this.textBox9.Size = new System.Drawing.Size(340, 29);
+            this.textBox9.Size = new System.Drawing.Size(340, 35);
             this.textBox9.TabIndex = 15;
             this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -290,186 +302,167 @@
             // 
             this.textBox13.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.textBox13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox13.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
-            this.textBox13.Location = new System.Drawing.Point(17, 171);
+            this.textBox13.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.textBox13.Location = new System.Drawing.Point(12, 200);
             this.textBox13.Name = "textBox13";
-            this.textBox13.ReadOnly = true;
-            this.textBox13.Size = new System.Drawing.Size(340, 29);
+            this.textBox13.Size = new System.Drawing.Size(340, 35);
             this.textBox13.TabIndex = 15;
             this.textBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
-            this.label23.Location = new System.Drawing.Point(412, 209);
+            this.label23.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.label23.Location = new System.Drawing.Point(407, 243);
             this.label23.Name = "label23";
             this.label23.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label23.Size = new System.Drawing.Size(69, 22);
+            this.label23.Size = new System.Drawing.Size(91, 26);
             this.label23.TabIndex = 14;
             this.label23.Text = "ملاحظات:";
             // 
             // textBox3
             // 
-            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
-            this.textBox3.Location = new System.Drawing.Point(626, 171);
+            this.textBox3.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.textBox3.Location = new System.Drawing.Point(621, 200);
             this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(340, 29);
+            this.textBox3.Size = new System.Drawing.Size(340, 35);
             this.textBox3.TabIndex = 15;
             this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label32
             // 
             this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
-            this.label32.Location = new System.Drawing.Point(412, 173);
+            this.label32.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.label32.Location = new System.Drawing.Point(407, 202);
             this.label32.Name = "label32";
             this.label32.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label32.Size = new System.Drawing.Size(84, 22);
+            this.label32.Size = new System.Drawing.Size(109, 26);
             this.label32.TabIndex = 14;
             this.label32.Text = "اسم السائق:";
             // 
             // label21
             // 
-            this.label21.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
-            this.label21.Location = new System.Drawing.Point(1018, 173);
+            this.label21.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.label21.Location = new System.Drawing.Point(1013, 202);
             this.label21.Name = "label21";
             this.label21.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label21.Size = new System.Drawing.Size(43, 22);
+            this.label21.Size = new System.Drawing.Size(54, 26);
             this.label21.TabIndex = 14;
             this.label21.Text = "دفعة:";
             // 
             // textBox4
             // 
-            this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox4.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
-            this.textBox4.Location = new System.Drawing.Point(626, 135);
+            this.textBox4.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.textBox4.Location = new System.Drawing.Point(621, 159);
             this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(340, 29);
+            this.textBox4.Size = new System.Drawing.Size(340, 35);
             this.textBox4.TabIndex = 13;
             this.textBox4.Text = "0";
             this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox5
             // 
-            this.textBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox5.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
-            this.textBox5.Location = new System.Drawing.Point(626, 207);
+            this.textBox5.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.textBox5.Location = new System.Drawing.Point(621, 241);
             this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(340, 29);
+            this.textBox5.Size = new System.Drawing.Size(340, 35);
             this.textBox5.TabIndex = 11;
             this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label22
             // 
-            this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
-            this.label22.Location = new System.Drawing.Point(1015, 138);
+            this.label22.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.label22.Location = new System.Drawing.Point(1010, 162);
             this.label22.Name = "label22";
             this.label22.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label22.Size = new System.Drawing.Size(51, 22);
+            this.label22.Size = new System.Drawing.Size(67, 26);
             this.label22.TabIndex = 12;
             this.label22.Text = "الكمية:";
             // 
             // label18
             // 
-            this.label18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
-            this.label18.Location = new System.Drawing.Point(1015, 66);
+            this.label18.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.label18.Location = new System.Drawing.Point(1010, 79);
             this.label18.Name = "label18";
             this.label18.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label18.Size = new System.Drawing.Size(88, 22);
+            this.label18.Size = new System.Drawing.Size(113, 26);
             this.label18.TabIndex = 10;
             this.label18.Text = "رقم الفاتورة:";
             // 
             // textBox2
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
-            this.textBox2.Location = new System.Drawing.Point(626, 100);
+            this.textBox2.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.textBox2.Location = new System.Drawing.Point(621, 118);
             this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(340, 29);
+            this.textBox2.Size = new System.Drawing.Size(340, 35);
             this.textBox2.TabIndex = 11;
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label20
             // 
-            this.label20.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
-            this.label20.Location = new System.Drawing.Point(1015, 102);
+            this.label20.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.label20.Location = new System.Drawing.Point(1010, 120);
             this.label20.Name = "label20";
             this.label20.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label20.Size = new System.Drawing.Size(56, 22);
+            this.label20.Size = new System.Drawing.Size(73, 26);
             this.label20.TabIndex = 10;
             this.label20.Text = "الأرض:";
             // 
             // textBox1
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
-            this.textBox1.Location = new System.Drawing.Point(626, 64);
+            this.textBox1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.textBox1.Location = new System.Drawing.Point(621, 77);
             this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(340, 29);
+            this.textBox1.Size = new System.Drawing.Size(340, 35);
             this.textBox1.TabIndex = 9;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label19
             // 
-            this.label19.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
-            this.label19.Location = new System.Drawing.Point(1015, 207);
+            this.label19.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.label19.Location = new System.Drawing.Point(1010, 241);
             this.label19.Name = "label19";
             this.label19.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label19.Size = new System.Drawing.Size(83, 22);
+            this.label19.Size = new System.Drawing.Size(107, 26);
             this.label19.TabIndex = 8;
             this.label19.Text = "اسم الزبون:";
             // 
             // txtName
             // 
-            this.txtName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtName.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txtName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtName.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
-            this.txtName.Location = new System.Drawing.Point(626, 29);
+            this.txtName.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.txtName.Location = new System.Drawing.Point(621, 36);
             this.txtName.Name = "txtName";
-            this.txtName.ReadOnly = true;
-            this.txtName.Size = new System.Drawing.Size(340, 29);
+            this.txtName.Size = new System.Drawing.Size(340, 35);
             this.txtName.TabIndex = 7;
             this.txtName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label27
             // 
-            this.label27.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
-            this.label27.Location = new System.Drawing.Point(1015, 31);
+            this.label27.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.label27.Location = new System.Drawing.Point(1010, 38);
             this.label27.Name = "label27";
             this.label27.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label27.Size = new System.Drawing.Size(82, 22);
+            this.label27.Size = new System.Drawing.Size(68, 26);
             this.label27.TabIndex = 6;
-            this.label27.Text = "رقم الحركة:";
+            this.label27.Text = "الكود:؟";
             // 
             // dataGridView1
             // 
@@ -865,17 +858,29 @@
             this.label8.Size = new System.Drawing.Size(0, 20);
             this.label8.TabIndex = 3;
             // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
+            this.button1.Location = new System.Drawing.Point(966, 35);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(46, 35);
+            this.button1.TabIndex = 219;
+            this.button1.Text = "...";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // Receiving_Movements_Details
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 26F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
             this.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.Margin = new System.Windows.Forms.Padding(7);
             this.Name = "Receiving_Movements_Details";
             this.Size = new System.Drawing.Size(1153, 674);
             this.panel1.ResumeLayout(false);
@@ -961,5 +966,7 @@
         public System.Windows.Forms.Button btn_refresh;
         public System.Windows.Forms.Label label7;
         public System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button btn_open_CustomerNameForm;
+        private System.Windows.Forms.Button button1;
     }
 }

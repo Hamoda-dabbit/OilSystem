@@ -156,7 +156,6 @@
             this.txt_serch.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
             this.txt_serch.Location = new System.Drawing.Point(89, 36);
             this.txt_serch.Name = "txt_serch";
-            this.txt_serch.ReadOnly = true;
             this.txt_serch.Size = new System.Drawing.Size(702, 35);
             this.txt_serch.TabIndex = 16;
             this.txt_serch.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -201,7 +200,6 @@
             this.textBox7.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
             this.textBox7.Location = new System.Drawing.Point(17, 74);
             this.textBox7.Name = "textBox7";
-            this.textBox7.ReadOnly = true;
             this.textBox7.Size = new System.Drawing.Size(340, 35);
             this.textBox7.TabIndex = 15;
             this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -225,7 +223,6 @@
             this.textBox8.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
             this.textBox8.Location = new System.Drawing.Point(17, 33);
             this.textBox8.Name = "textBox8";
-            this.textBox8.ReadOnly = true;
             this.textBox8.Size = new System.Drawing.Size(340, 35);
             this.textBox8.TabIndex = 14;
             this.textBox8.Text = "0";
@@ -262,7 +259,6 @@
             this.textBox1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
             this.textBox1.Location = new System.Drawing.Point(626, 74);
             this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(340, 35);
             this.textBox1.TabIndex = 11;
             this.textBox1.Text = "0";
@@ -275,7 +271,6 @@
             this.txtName.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
             this.txtName.Location = new System.Drawing.Point(626, 33);
             this.txtName.Name = "txtName";
-            this.txtName.ReadOnly = true;
             this.txtName.Size = new System.Drawing.Size(340, 35);
             this.txtName.TabIndex = 10;
             this.txtName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -690,6 +685,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 26F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.groupBox2);

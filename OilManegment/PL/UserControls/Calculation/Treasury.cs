@@ -12,9 +12,17 @@ namespace OilManegment.PL.UserControls.Calculation
 {
     public partial class Treasury : UserControl
     {
+        private PL.Forms.InternalForms.Select_employee frm_selectEmployee = new Forms.InternalForms.Select_employee();
+
         public Treasury()
         {
             InitializeComponent();
+        }
+
+        private void Btn_open_EmployeeForm_Click(object sender, EventArgs e)
+        {
+            frm_selectEmployee.ShowDialog();
+
         }
     }
 }

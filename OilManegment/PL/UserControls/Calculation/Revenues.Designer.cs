@@ -171,18 +171,18 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold);
-            this.dateTimePicker1.Location = new System.Drawing.Point(697, 159);
+            this.dateTimePicker1.Location = new System.Drawing.Point(696, 159);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.dateTimePicker1.Size = new System.Drawing.Size(288, 32);
+            this.dateTimePicker1.Size = new System.Drawing.Size(287, 32);
             this.dateTimePicker1.TabIndex = 53;
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(697, 31);
+            this.comboBox1.Location = new System.Drawing.Point(696, 31);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(288, 37);
+            this.comboBox1.Size = new System.Drawing.Size(287, 37);
             this.comboBox1.TabIndex = 51;
             // 
             // textBox6
@@ -192,7 +192,6 @@
             this.textBox6.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
             this.textBox6.Location = new System.Drawing.Point(142, 156);
             this.textBox6.Name = "textBox6";
-            this.textBox6.ReadOnly = true;
             this.textBox6.Size = new System.Drawing.Size(288, 35);
             this.textBox6.TabIndex = 20;
             this.textBox6.Text = "0";
@@ -229,7 +228,6 @@
             this.textBox5.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
             this.textBox5.Location = new System.Drawing.Point(142, 115);
             this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
             this.textBox5.Size = new System.Drawing.Size(288, 35);
             this.textBox5.TabIndex = 19;
             this.textBox5.Text = "0";
@@ -240,9 +238,8 @@
             this.textBox8.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox8.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
-            this.textBox8.Location = new System.Drawing.Point(697, 115);
+            this.textBox8.Location = new System.Drawing.Point(696, 115);
             this.textBox8.Name = "textBox8";
-            this.textBox8.ReadOnly = true;
             this.textBox8.Size = new System.Drawing.Size(288, 35);
             this.textBox8.TabIndex = 14;
             this.textBox8.Text = "0";
@@ -289,7 +286,7 @@
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
             this.label19.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label19.Location = new System.Drawing.Point(991, 76);
+            this.label19.Location = new System.Drawing.Point(990, 76);
             this.label19.Name = "label19";
             this.label19.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label19.Size = new System.Drawing.Size(102, 26);
@@ -303,7 +300,6 @@
             this.textBox4.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
             this.textBox4.Location = new System.Drawing.Point(142, 74);
             this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
             this.textBox4.Size = new System.Drawing.Size(288, 35);
             this.textBox4.TabIndex = 18;
             this.textBox4.Text = "0";
@@ -314,9 +310,8 @@
             this.textBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
-            this.textBox1.Location = new System.Drawing.Point(697, 74);
+            this.textBox1.Location = new System.Drawing.Point(696, 74);
             this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(288, 35);
             this.textBox1.TabIndex = 11;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -328,7 +323,6 @@
             this.textBox3.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
             this.textBox3.Location = new System.Drawing.Point(142, 33);
             this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
             this.textBox3.Size = new System.Drawing.Size(288, 35);
             this.textBox3.TabIndex = 17;
             this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -350,7 +344,7 @@
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
             this.label27.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label27.Location = new System.Drawing.Point(991, 35);
+            this.label27.Location = new System.Drawing.Point(990, 35);
             this.label27.Name = "label27";
             this.label27.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label27.Size = new System.Drawing.Size(101, 26);
@@ -755,12 +749,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 26F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
-            this.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.Margin = new System.Windows.Forms.Padding(7);
             this.Name = "Revenues";
             this.Size = new System.Drawing.Size(1153, 674);
             this.panel1.ResumeLayout(false);

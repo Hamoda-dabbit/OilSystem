@@ -61,12 +61,12 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txt_store = new System.Windows.Forms.TextBox();
+            this.txt_employee = new System.Windows.Forms.TextBox();
+            this.txt_customerName = new System.Windows.Forms.TextBox();
+            this.btn_open_StoreForm = new System.Windows.Forms.Button();
+            this.btn_open_EmployeeForm = new System.Windows.Forms.Button();
+            this.btn_open_CustomerNameForm = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
@@ -78,7 +78,7 @@
             this.label22 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.txtName = new System.Windows.Forms.TextBox();
+            this.txt_billNumber = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.comboBox6 = new System.Windows.Forms.ComboBox();
@@ -125,12 +125,12 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.label17.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold);
             this.label17.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label17.Location = new System.Drawing.Point(532, 4);
             this.label17.Name = "label17";
             this.label17.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label17.Size = new System.Drawing.Size(149, 26);
+            this.label17.Size = new System.Drawing.Size(164, 31);
             this.label17.TabIndex = 25;
             this.label17.Text = "فاتورة المشتريات";
             // 
@@ -544,12 +544,12 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.comboBox3);
-            this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.comboBox2);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.txt_store);
+            this.groupBox1.Controls.Add(this.txt_employee);
+            this.groupBox1.Controls.Add(this.txt_customerName);
+            this.groupBox1.Controls.Add(this.btn_open_StoreForm);
+            this.groupBox1.Controls.Add(this.btn_open_EmployeeForm);
+            this.groupBox1.Controls.Add(this.btn_open_CustomerNameForm);
             this.groupBox1.Controls.Add(this.dateTimePicker1);
             this.groupBox1.Controls.Add(this.textBox6);
             this.groupBox1.Controls.Add(this.label24);
@@ -561,102 +561,104 @@
             this.groupBox1.Controls.Add(this.label22);
             this.groupBox1.Controls.Add(this.label20);
             this.groupBox1.Controls.Add(this.label19);
-            this.groupBox1.Controls.Add(this.txtName);
+            this.groupBox1.Controls.Add(this.txt_billNumber);
             this.groupBox1.Controls.Add(this.label27);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold);
+            this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 19F, System.Drawing.FontStyle.Bold);
             this.groupBox1.Location = new System.Drawing.Point(0, 34);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.groupBox1.Size = new System.Drawing.Size(1153, 189);
+            this.groupBox1.Size = new System.Drawing.Size(1153, 208);
             this.groupBox1.TabIndex = 206;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "بيانات فاتورة المشتريات:";
             // 
-            // comboBox3
+            // txt_store
             // 
-            this.comboBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox3.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold);
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(701, 137);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(292, 32);
-            this.comboBox3.TabIndex = 26;
+            this.txt_store.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txt_store.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_store.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.txt_store.Location = new System.Drawing.Point(701, 157);
+            this.txt_store.Name = "txt_store";
+            this.txt_store.Size = new System.Drawing.Size(288, 35);
+            this.txt_store.TabIndex = 219;
+            this.txt_store.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // button3
+            // txt_employee
             // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.button3.Location = new System.Drawing.Point(996, 137);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(33, 32);
-            this.button3.TabIndex = 25;
-            this.button3.Text = "...";
-            this.button3.UseVisualStyleBackColor = true;
+            this.txt_employee.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txt_employee.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_employee.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.txt_employee.Location = new System.Drawing.Point(701, 116);
+            this.txt_employee.Name = "txt_employee";
+            this.txt_employee.Size = new System.Drawing.Size(288, 35);
+            this.txt_employee.TabIndex = 219;
+            this.txt_employee.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // comboBox2
+            // txt_customerName
             // 
-            this.comboBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox2.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold);
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(701, 99);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(292, 32);
-            this.comboBox2.TabIndex = 26;
+            this.txt_customerName.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txt_customerName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_customerName.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.txt_customerName.Location = new System.Drawing.Point(701, 77);
+            this.txt_customerName.Name = "txt_customerName";
+            this.txt_customerName.Size = new System.Drawing.Size(288, 35);
+            this.txt_customerName.TabIndex = 219;
+            this.txt_customerName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // button2
+            // btn_open_StoreForm
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.button2.Location = new System.Drawing.Point(996, 99);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(33, 32);
-            this.button2.TabIndex = 25;
-            this.button2.Text = "...";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_open_StoreForm.FlatAppearance.BorderSize = 0;
+            this.btn_open_StoreForm.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
+            this.btn_open_StoreForm.Location = new System.Drawing.Point(995, 157);
+            this.btn_open_StoreForm.Name = "btn_open_StoreForm";
+            this.btn_open_StoreForm.Size = new System.Drawing.Size(46, 35);
+            this.btn_open_StoreForm.TabIndex = 218;
+            this.btn_open_StoreForm.Text = "...";
+            this.btn_open_StoreForm.UseVisualStyleBackColor = true;
+            this.btn_open_StoreForm.Click += new System.EventHandler(this.Btn_open_StoreForm_Click);
             // 
-            // comboBox1
+            // btn_open_EmployeeForm
             // 
-            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox1.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(701, 64);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(292, 32);
-            this.comboBox1.TabIndex = 26;
+            this.btn_open_EmployeeForm.FlatAppearance.BorderSize = 0;
+            this.btn_open_EmployeeForm.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
+            this.btn_open_EmployeeForm.Location = new System.Drawing.Point(995, 116);
+            this.btn_open_EmployeeForm.Name = "btn_open_EmployeeForm";
+            this.btn_open_EmployeeForm.Size = new System.Drawing.Size(46, 35);
+            this.btn_open_EmployeeForm.TabIndex = 218;
+            this.btn_open_EmployeeForm.Text = "...";
+            this.btn_open_EmployeeForm.UseVisualStyleBackColor = true;
+            this.btn_open_EmployeeForm.Click += new System.EventHandler(this.Btn_open_EmployeeForm_Click);
             // 
-            // button1
+            // btn_open_CustomerNameForm
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.button1.Location = new System.Drawing.Point(996, 64);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(33, 32);
-            this.button1.TabIndex = 25;
-            this.button1.Text = "...";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_open_CustomerNameForm.FlatAppearance.BorderSize = 0;
+            this.btn_open_CustomerNameForm.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
+            this.btn_open_CustomerNameForm.Location = new System.Drawing.Point(995, 77);
+            this.btn_open_CustomerNameForm.Name = "btn_open_CustomerNameForm";
+            this.btn_open_CustomerNameForm.Size = new System.Drawing.Size(46, 35);
+            this.btn_open_CustomerNameForm.TabIndex = 218;
+            this.btn_open_CustomerNameForm.Text = "...";
+            this.btn_open_CustomerNameForm.UseVisualStyleBackColor = true;
+            this.btn_open_CustomerNameForm.Click += new System.EventHandler(this.Btn_open_CustomerNameForm_Click);
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold);
-            this.dateTimePicker1.Location = new System.Drawing.Point(15, 29);
+            this.dateTimePicker1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.dateTimePicker1.Location = new System.Drawing.Point(15, 35);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.dateTimePicker1.Size = new System.Drawing.Size(292, 32);
+            this.dateTimePicker1.Size = new System.Drawing.Size(292, 35);
             this.dateTimePicker1.TabIndex = 24;
             // 
             // textBox6
             // 
             this.textBox6.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox6.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold);
-            this.textBox6.Location = new System.Drawing.Point(15, 142);
+            this.textBox6.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.textBox6.Location = new System.Drawing.Point(15, 162);
             this.textBox6.Name = "textBox6";
-            this.textBox6.ReadOnly = true;
-            this.textBox6.Size = new System.Drawing.Size(292, 32);
+            this.textBox6.Size = new System.Drawing.Size(292, 35);
             this.textBox6.TabIndex = 23;
             this.textBox6.Text = "0";
             this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -664,11 +666,11 @@
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold);
-            this.label24.Location = new System.Drawing.Point(353, 142);
+            this.label24.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.label24.Location = new System.Drawing.Point(353, 162);
             this.label24.Name = "label24";
             this.label24.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label24.Size = new System.Drawing.Size(113, 25);
+            this.label24.Size = new System.Drawing.Size(120, 26);
             this.label24.TabIndex = 22;
             this.label24.Text = "رصيد المورد:";
             // 
@@ -676,22 +678,21 @@
             // 
             this.textBox7.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox7.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold);
-            this.textBox7.Location = new System.Drawing.Point(15, 102);
+            this.textBox7.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.textBox7.Location = new System.Drawing.Point(15, 120);
             this.textBox7.Name = "textBox7";
-            this.textBox7.ReadOnly = true;
-            this.textBox7.Size = new System.Drawing.Size(292, 32);
+            this.textBox7.Size = new System.Drawing.Size(292, 35);
             this.textBox7.TabIndex = 21;
             this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold);
-            this.label25.Location = new System.Drawing.Point(349, 104);
+            this.label25.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.label25.Location = new System.Drawing.Point(349, 122);
             this.label25.Name = "label25";
             this.label25.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label25.Size = new System.Drawing.Size(70, 25);
+            this.label25.Size = new System.Drawing.Size(76, 26);
             this.label25.TabIndex = 20;
             this.label25.Text = "العنوان:";
             // 
@@ -699,99 +700,93 @@
             // 
             this.textBox8.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox8.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold);
-            this.textBox8.Location = new System.Drawing.Point(15, 64);
+            this.textBox8.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.textBox8.Location = new System.Drawing.Point(15, 77);
             this.textBox8.Name = "textBox8";
-            this.textBox8.ReadOnly = true;
-            this.textBox8.Size = new System.Drawing.Size(292, 32);
+            this.textBox8.Size = new System.Drawing.Size(292, 35);
             this.textBox8.TabIndex = 19;
             this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold);
-            this.label26.Location = new System.Drawing.Point(349, 66);
+            this.label26.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.label26.Location = new System.Drawing.Point(349, 79);
             this.label26.Name = "label26";
             this.label26.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label26.Size = new System.Drawing.Size(98, 25);
+            this.label26.Size = new System.Drawing.Size(105, 26);
             this.label26.TabIndex = 18;
             this.label26.Text = "رقم الهاتف:";
             // 
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold);
-            this.label28.Location = new System.Drawing.Point(349, 34);
+            this.label28.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.label28.Location = new System.Drawing.Point(349, 40);
             this.label28.Name = "label28";
             this.label28.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label28.Size = new System.Drawing.Size(61, 25);
+            this.label28.Size = new System.Drawing.Size(66, 26);
             this.label28.TabIndex = 16;
             this.label28.Text = "التاريخ";
             // 
             // label22
             // 
-            this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold);
-            this.label22.Location = new System.Drawing.Point(1037, 142);
+            this.label22.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.label22.Location = new System.Drawing.Point(1040, 162);
             this.label22.Name = "label22";
             this.label22.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label22.Size = new System.Drawing.Size(72, 25);
+            this.label22.Size = new System.Drawing.Size(78, 26);
             this.label22.TabIndex = 12;
             this.label22.Text = "الخزينة:";
             // 
             // label20
             // 
-            this.label20.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold);
-            this.label20.Location = new System.Drawing.Point(1037, 104);
+            this.label20.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.label20.Location = new System.Drawing.Point(1040, 122);
             this.label20.Name = "label20";
             this.label20.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label20.Size = new System.Drawing.Size(77, 25);
+            this.label20.Size = new System.Drawing.Size(83, 26);
             this.label20.TabIndex = 10;
             this.label20.Text = "الموظف:";
             // 
             // label19
             // 
-            this.label19.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold);
-            this.label19.Location = new System.Drawing.Point(1035, 64);
+            this.label19.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.label19.Location = new System.Drawing.Point(1038, 77);
             this.label19.Name = "label19";
             this.label19.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label19.Size = new System.Drawing.Size(99, 25);
+            this.label19.Size = new System.Drawing.Size(107, 26);
             this.label19.TabIndex = 8;
             this.label19.Text = "اسم الزبون:";
             // 
-            // txtName
+            // txt_billNumber
             // 
-            this.txtName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtName.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txtName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtName.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold);
-            this.txtName.Location = new System.Drawing.Point(701, 30);
-            this.txtName.Name = "txtName";
-            this.txtName.ReadOnly = true;
-            this.txtName.Size = new System.Drawing.Size(292, 32);
-            this.txtName.TabIndex = 7;
-            this.txtName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_billNumber.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txt_billNumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_billNumber.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.txt_billNumber.Location = new System.Drawing.Point(701, 36);
+            this.txt_billNumber.Name = "txt_billNumber";
+            this.txt_billNumber.Size = new System.Drawing.Size(288, 35);
+            this.txt_billNumber.TabIndex = 7;
+            this.txt_billNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label27
             // 
-            this.label27.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold);
-            this.label27.Location = new System.Drawing.Point(1035, 32);
+            this.label27.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.label27.Location = new System.Drawing.Point(1038, 38);
             this.label27.Name = "label27";
             this.label27.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label27.Size = new System.Drawing.Size(106, 25);
+            this.label27.Size = new System.Drawing.Size(113, 26);
             this.label27.TabIndex = 6;
             this.label27.Text = "رقم الفاتورة:";
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.SystemColors.ControlLight;
             this.groupBox2.Controls.Add(this.comboBox6);
             this.groupBox2.Controls.Add(this.textBox9);
             this.groupBox2.Controls.Add(this.label31);
@@ -808,7 +803,7 @@
             this.groupBox2.Controls.Add(this.label32);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox2.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold);
-            this.groupBox2.Location = new System.Drawing.Point(0, 223);
+            this.groupBox2.Location = new System.Drawing.Point(0, 242);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.groupBox2.Size = new System.Drawing.Size(1153, 127);
@@ -817,22 +812,21 @@
             // 
             // comboBox6
             // 
-            this.comboBox6.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold);
+            this.comboBox6.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
             this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(984, 64);
+            this.comboBox6.Location = new System.Drawing.Point(918, 66);
             this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(150, 32);
+            this.comboBox6.Size = new System.Drawing.Size(150, 34);
             this.comboBox6.TabIndex = 26;
             // 
             // textBox9
             // 
             this.textBox9.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox9.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold);
-            this.textBox9.Location = new System.Drawing.Point(138, 64);
+            this.textBox9.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.textBox9.Location = new System.Drawing.Point(72, 66);
             this.textBox9.Name = "textBox9";
-            this.textBox9.ReadOnly = true;
-            this.textBox9.Size = new System.Drawing.Size(141, 32);
+            this.textBox9.Size = new System.Drawing.Size(141, 35);
             this.textBox9.TabIndex = 23;
             this.textBox9.Text = "0";
             this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -840,11 +834,11 @@
             // label31
             // 
             this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold);
-            this.label31.Location = new System.Drawing.Point(185, 28);
+            this.label31.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.label31.Location = new System.Drawing.Point(119, 30);
             this.label31.Name = "label31";
             this.label31.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label31.Size = new System.Drawing.Size(63, 25);
+            this.label31.Size = new System.Drawing.Size(69, 26);
             this.label31.TabIndex = 22;
             this.label31.Text = "المتبقي";
             // 
@@ -852,11 +846,10 @@
             // 
             this.textBox5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox5.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold);
-            this.textBox5.Location = new System.Drawing.Point(285, 64);
+            this.textBox5.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.textBox5.Location = new System.Drawing.Point(219, 66);
             this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(141, 32);
+            this.textBox5.Size = new System.Drawing.Size(141, 35);
             this.textBox5.TabIndex = 23;
             this.textBox5.Text = "0";
             this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -864,11 +857,11 @@
             // label30
             // 
             this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold);
-            this.label30.Location = new System.Drawing.Point(332, 28);
+            this.label30.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.label30.Location = new System.Drawing.Point(266, 30);
             this.label30.Name = "label30";
             this.label30.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label30.Size = new System.Drawing.Size(68, 25);
+            this.label30.Size = new System.Drawing.Size(72, 26);
             this.label30.TabIndex = 22;
             this.label30.Text = "المدفوع";
             // 
@@ -876,11 +869,10 @@
             // 
             this.textBox4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox4.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold);
-            this.textBox4.Location = new System.Drawing.Point(437, 64);
+            this.textBox4.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.textBox4.Location = new System.Drawing.Point(371, 66);
             this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(141, 32);
+            this.textBox4.Size = new System.Drawing.Size(141, 35);
             this.textBox4.TabIndex = 23;
             this.textBox4.Text = "0";
             this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -888,11 +880,11 @@
             // label29
             // 
             this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold);
-            this.label29.Location = new System.Drawing.Point(484, 28);
+            this.label29.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.label29.Location = new System.Drawing.Point(418, 30);
             this.label29.Name = "label29";
             this.label29.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label29.Size = new System.Drawing.Size(72, 25);
+            this.label29.Size = new System.Drawing.Size(78, 26);
             this.label29.TabIndex = 22;
             this.label29.Text = "الإجمالي";
             // 
@@ -900,11 +892,10 @@
             // 
             this.textBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold);
-            this.textBox1.Location = new System.Drawing.Point(584, 64);
+            this.textBox1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.textBox1.Location = new System.Drawing.Point(518, 66);
             this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(141, 32);
+            this.textBox1.Size = new System.Drawing.Size(141, 35);
             this.textBox1.TabIndex = 23;
             this.textBox1.Text = "0";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -912,11 +903,11 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold);
-            this.label18.Location = new System.Drawing.Point(631, 28);
+            this.label18.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.label18.Location = new System.Drawing.Point(565, 30);
             this.label18.Name = "label18";
             this.label18.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label18.Size = new System.Drawing.Size(54, 25);
+            this.label18.Size = new System.Drawing.Size(59, 26);
             this.label18.TabIndex = 22;
             this.label18.Text = "الكمية";
             // 
@@ -924,22 +915,21 @@
             // 
             this.textBox2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold);
-            this.textBox2.Location = new System.Drawing.Point(731, 64);
+            this.textBox2.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.textBox2.Location = new System.Drawing.Point(665, 66);
             this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(123, 32);
+            this.textBox2.Size = new System.Drawing.Size(123, 35);
             this.textBox2.TabIndex = 21;
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold);
-            this.label21.Location = new System.Drawing.Point(758, 28);
+            this.label21.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.label21.Location = new System.Drawing.Point(692, 30);
             this.label21.Name = "label21";
             this.label21.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label21.Size = new System.Drawing.Size(70, 25);
+            this.label21.Size = new System.Drawing.Size(75, 26);
             this.label21.TabIndex = 20;
             this.label21.Text = "السعر $";
             // 
@@ -947,56 +937,56 @@
             // 
             this.textBox3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold);
-            this.textBox3.Location = new System.Drawing.Point(863, 64);
+            this.textBox3.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.textBox3.Location = new System.Drawing.Point(797, 66);
             this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(115, 32);
+            this.textBox3.Size = new System.Drawing.Size(115, 35);
             this.textBox3.TabIndex = 19;
             this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold);
-            this.label23.Location = new System.Drawing.Point(886, 28);
+            this.label23.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.label23.Location = new System.Drawing.Point(820, 30);
             this.label23.Name = "label23";
             this.label23.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label23.Size = new System.Drawing.Size(55, 25);
+            this.label23.Size = new System.Drawing.Size(59, 26);
             this.label23.TabIndex = 18;
             this.label23.Text = "الأسيد";
             // 
             // label32
             // 
-            this.label32.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold);
-            this.label32.Location = new System.Drawing.Point(1018, 28);
+            this.label32.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.label32.Location = new System.Drawing.Point(952, 30);
             this.label32.Name = "label32";
             this.label32.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label32.Size = new System.Drawing.Size(87, 25);
+            this.label32.Size = new System.Drawing.Size(95, 26);
             this.label32.TabIndex = 8;
             this.label32.Text = "اسم المنتج";
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 387);
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 369);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1153, 228);
+            this.dataGridView1.Size = new System.Drawing.Size(1153, 246);
             this.dataGridView1.TabIndex = 208;
             // 
             // Purchase_Bills
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold);
+            this.ForeColor = System.Drawing.SystemColors.WindowText;
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Purchase_Bills";
             this.Size = new System.Drawing.Size(1153, 674);
@@ -1060,12 +1050,6 @@
         public System.Windows.Forms.Label label7;
         public System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label24;
@@ -1077,7 +1061,7 @@
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.TextBox txt_billNumber;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.ComboBox comboBox6;
@@ -1095,5 +1079,11 @@
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btn_open_StoreForm;
+        private System.Windows.Forms.Button btn_open_EmployeeForm;
+        private System.Windows.Forms.Button btn_open_CustomerNameForm;
+        private System.Windows.Forms.TextBox txt_store;
+        private System.Windows.Forms.TextBox txt_employee;
+        private System.Windows.Forms.TextBox txt_customerName;
     }
 }

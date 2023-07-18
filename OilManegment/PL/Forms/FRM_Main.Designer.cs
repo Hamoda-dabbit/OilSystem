@@ -32,8 +32,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRM_Main));
             this.panelleft = new System.Windows.Forms.Panel();
             this.btn_settings = new System.Windows.Forms.Button();
+            this.btn_logOut = new System.Windows.Forms.Button();
             this.btn_data = new System.Windows.Forms.Button();
-            this.btn_usrs = new System.Windows.Forms.Button();
             this.btn_side = new System.Windows.Forms.Button();
             this.btn_calculation = new System.Windows.Forms.Button();
             this.panelside = new System.Windows.Forms.Panel();
@@ -41,6 +41,7 @@
             this.btn_managing_products_and_people = new System.Windows.Forms.Button();
             this.btn_dues = new System.Windows.Forms.Button();
             this.btn_main = new System.Windows.Forms.Button();
+            this.btn_usrs = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btn_exit = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -72,12 +73,11 @@
             this.panel_high = new System.Windows.Forms.Panel();
             this.panel_options_settings = new System.Windows.Forms.Panel();
             this.btm_reports = new System.Windows.Forms.Button();
-            this.btn_logOut = new System.Windows.Forms.Button();
             this.btn_search = new System.Windows.Forms.Button();
             this.panel_options_data = new System.Windows.Forms.Panel();
-            this.button55 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button57 = new System.Windows.Forms.Button();
+            this.btn_save_backUp = new System.Windows.Forms.Button();
+            this.btn_press_data = new System.Windows.Forms.Button();
+            this.btn_load_backUp = new System.Windows.Forms.Button();
             this.panel_options_calculation = new System.Windows.Forms.Panel();
             this.btn_expenses = new System.Windows.Forms.Button();
             this.btn_revenues = new System.Windows.Forms.Button();
@@ -89,9 +89,6 @@
             this.btn_customers = new System.Windows.Forms.Button();
             this.btn_stores = new System.Windows.Forms.Button();
             this.btn_products = new System.Windows.Forms.Button();
-            this.panel_options_users = new System.Windows.Forms.Panel();
-            this.button50 = new System.Windows.Forms.Button();
-            this.button52 = new System.Windows.Forms.Button();
             this.panel_options_dues = new System.Windows.Forms.Panel();
             this.btn_catch_receipt = new System.Windows.Forms.Button();
             this.btn_payment_voucher = new System.Windows.Forms.Button();
@@ -111,6 +108,12 @@
             this.panelcontrols = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.timertime = new System.Windows.Forms.Timer(this.components);
+            this.البياناتToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.الاعداداتToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.البياناتToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.الاعداداتToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.سندقبضToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.سندبيعToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelleft.SuspendLayout();
             this.panel3.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -119,7 +122,6 @@
             this.panel_options_data.SuspendLayout();
             this.panel_options_calculation.SuspendLayout();
             this.panel_options_managing_products_and_people_Click.SuspendLayout();
-            this.panel_options_users.SuspendLayout();
             this.panel_options_dues.SuspendLayout();
             this.panel_options_main.SuspendLayout();
             this.panel_options_bills.SuspendLayout();
@@ -131,8 +133,8 @@
             this.panelleft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(91)))), ((int)(((byte)(135)))));
             this.panelleft.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelleft.Controls.Add(this.btn_settings);
+            this.panelleft.Controls.Add(this.btn_logOut);
             this.panelleft.Controls.Add(this.btn_data);
-            this.panelleft.Controls.Add(this.btn_usrs);
             this.panelleft.Controls.Add(this.btn_side);
             this.panelleft.Controls.Add(this.btn_calculation);
             this.panelleft.Controls.Add(this.panelside);
@@ -154,7 +156,7 @@
             this.btn_settings.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold);
             this.btn_settings.ForeColor = System.Drawing.Color.White;
             this.btn_settings.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_settings.Location = new System.Drawing.Point(10, 623);
+            this.btn_settings.Location = new System.Drawing.Point(9, 623);
             this.btn_settings.Name = "btn_settings";
             this.btn_settings.Size = new System.Drawing.Size(200, 47);
             this.btn_settings.TabIndex = 7;
@@ -163,6 +165,22 @@
             this.btn_settings.UseVisualStyleBackColor = false;
             this.btn_settings.Click += new System.EventHandler(this.Btn_settings_Click);
             // 
+            // btn_logOut
+            // 
+            this.btn_logOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(91)))), ((int)(((byte)(135)))));
+            this.btn_logOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_logOut.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.btn_logOut.ForeColor = System.Drawing.Color.White;
+            this.btn_logOut.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btn_logOut.Location = new System.Drawing.Point(9, 696);
+            this.btn_logOut.Name = "btn_logOut";
+            this.btn_logOut.Size = new System.Drawing.Size(200, 47);
+            this.btn_logOut.TabIndex = 3;
+            this.btn_logOut.Text = "تسجيل خروج";
+            this.btn_logOut.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btn_logOut.UseVisualStyleBackColor = false;
+            this.btn_logOut.Click += new System.EventHandler(this.Btn_logOut_Click);
+            // 
             // btn_data
             // 
             this.btn_data.BackColor = System.Drawing.Color.SteelBlue;
@@ -170,7 +188,7 @@
             this.btn_data.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold);
             this.btn_data.ForeColor = System.Drawing.Color.White;
             this.btn_data.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_data.Location = new System.Drawing.Point(10, 571);
+            this.btn_data.Location = new System.Drawing.Point(9, 571);
             this.btn_data.Name = "btn_data";
             this.btn_data.Size = new System.Drawing.Size(200, 47);
             this.btn_data.TabIndex = 6;
@@ -178,22 +196,6 @@
             this.btn_data.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btn_data.UseVisualStyleBackColor = false;
             this.btn_data.Click += new System.EventHandler(this.Btn_data_Click);
-            // 
-            // btn_usrs
-            // 
-            this.btn_usrs.BackColor = System.Drawing.Color.SteelBlue;
-            this.btn_usrs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_usrs.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold);
-            this.btn_usrs.ForeColor = System.Drawing.Color.White;
-            this.btn_usrs.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_usrs.Location = new System.Drawing.Point(10, 518);
-            this.btn_usrs.Name = "btn_usrs";
-            this.btn_usrs.Size = new System.Drawing.Size(200, 47);
-            this.btn_usrs.TabIndex = 5;
-            this.btn_usrs.Text = "المستخدمين";
-            this.btn_usrs.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btn_usrs.UseVisualStyleBackColor = false;
-            this.btn_usrs.Click += new System.EventHandler(this.Btn_usrs_Click);
             // 
             // btn_side
             // 
@@ -217,7 +219,7 @@
             this.btn_calculation.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold);
             this.btn_calculation.ForeColor = System.Drawing.Color.White;
             this.btn_calculation.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_calculation.Location = new System.Drawing.Point(12, 308);
+            this.btn_calculation.Location = new System.Drawing.Point(9, 338);
             this.btn_calculation.Name = "btn_calculation";
             this.btn_calculation.Size = new System.Drawing.Size(200, 47);
             this.btn_calculation.TabIndex = 3;
@@ -233,6 +235,7 @@
             this.panelside.Name = "panelside";
             this.panelside.Size = new System.Drawing.Size(8, 47);
             this.panelside.TabIndex = 1;
+            this.panelside.Visible = false;
             // 
             // btn_bills
             // 
@@ -241,7 +244,7 @@
             this.btn_bills.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold);
             this.btn_bills.ForeColor = System.Drawing.Color.White;
             this.btn_bills.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_bills.Location = new System.Drawing.Point(11, 107);
+            this.btn_bills.Location = new System.Drawing.Point(9, 107);
             this.btn_bills.Name = "btn_bills";
             this.btn_bills.Size = new System.Drawing.Size(200, 47);
             this.btn_bills.TabIndex = 2;
@@ -257,7 +260,7 @@
             this.btn_managing_products_and_people.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold);
             this.btn_managing_products_and_people.ForeColor = System.Drawing.Color.White;
             this.btn_managing_products_and_people.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_managing_products_and_people.Location = new System.Drawing.Point(11, 214);
+            this.btn_managing_products_and_people.Location = new System.Drawing.Point(9, 244);
             this.btn_managing_products_and_people.Name = "btn_managing_products_and_people";
             this.btn_managing_products_and_people.Size = new System.Drawing.Size(200, 88);
             this.btn_managing_products_and_people.TabIndex = 2;
@@ -273,9 +276,9 @@
             this.btn_dues.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold);
             this.btn_dues.ForeColor = System.Drawing.Color.White;
             this.btn_dues.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_dues.Location = new System.Drawing.Point(11, 162);
+            this.btn_dues.Location = new System.Drawing.Point(9, 162);
             this.btn_dues.Name = "btn_dues";
-            this.btn_dues.Size = new System.Drawing.Size(200, 47);
+            this.btn_dues.Size = new System.Drawing.Size(200, 75);
             this.btn_dues.TabIndex = 2;
             this.btn_dues.Text = "المستحقات (السندات)";
             this.btn_dues.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
@@ -289,7 +292,7 @@
             this.btn_main.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold);
             this.btn_main.ForeColor = System.Drawing.Color.White;
             this.btn_main.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_main.Location = new System.Drawing.Point(11, 55);
+            this.btn_main.Location = new System.Drawing.Point(9, 55);
             this.btn_main.Name = "btn_main";
             this.btn_main.Size = new System.Drawing.Size(200, 47);
             this.btn_main.TabIndex = 2;
@@ -298,9 +301,25 @@
             this.btn_main.UseVisualStyleBackColor = false;
             this.btn_main.Click += new System.EventHandler(this.Btn_main_Click);
             // 
+            // btn_usrs
+            // 
+            this.btn_usrs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(91)))), ((int)(((byte)(135)))));
+            this.btn_usrs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_usrs.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold);
+            this.btn_usrs.ForeColor = System.Drawing.Color.White;
+            this.btn_usrs.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btn_usrs.Location = new System.Drawing.Point(446, 3);
+            this.btn_usrs.Name = "btn_usrs";
+            this.btn_usrs.Size = new System.Drawing.Size(192, 47);
+            this.btn_usrs.TabIndex = 5;
+            this.btn_usrs.Text = "إدارة المستخدمين";
+            this.btn_usrs.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btn_usrs.UseVisualStyleBackColor = false;
+            this.btn_usrs.Click += new System.EventHandler(this.Btn_usrs_Click);
+            // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.SystemColors.Info;
+            this.panel3.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.panel3.Controls.Add(this.btn_exit);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.menuStrip1);
@@ -351,7 +370,9 @@
             this.الفواتيرToolStripMenuItem,
             this.المستحقاتToolStripMenuItem,
             this.إدارةالمنتجاتوالأشخاصToolStripMenuItem,
-            this.الحساباتToolStripMenuItem});
+            this.الحساباتToolStripMenuItem,
+            this.البياناتToolStripMenuItem,
+            this.الاعداداتToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
@@ -380,15 +401,15 @@
             // 
             this.الرئيسيةToolStripMenuItem1.Name = "الرئيسيةToolStripMenuItem1";
             this.الرئيسيةToolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.D1)));
-            this.الرئيسيةToolStripMenuItem1.Size = new System.Drawing.Size(250, 22);
+            this.الرئيسيةToolStripMenuItem1.Size = new System.Drawing.Size(245, 22);
             this.الرئيسيةToolStripMenuItem1.Text = "الرئيسية";
             this.الرئيسيةToolStripMenuItem1.Click += new System.EventHandler(this.الرئيسيةToolStripMenuItem1_Click);
             // 
             // البيرينToolStripMenuItem1
             // 
             this.البيرينToolStripMenuItem1.Name = "البيرينToolStripMenuItem1";
-            this.البيرينToolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.T)));
-            this.البيرينToolStripMenuItem1.Size = new System.Drawing.Size(250, 22);
+            this.البيرينToolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.Q)));
+            this.البيرينToolStripMenuItem1.Size = new System.Drawing.Size(245, 22);
             this.البيرينToolStripMenuItem1.Text = "البيرين";
             this.البيرينToolStripMenuItem1.Click += new System.EventHandler(this.البيرينToolStripMenuItem1_Click);
             // 
@@ -396,31 +417,31 @@
             // 
             this.عصرالزيتونToolStripMenuItem1.Name = "عصرالزيتونToolStripMenuItem1";
             this.عصرالزيتونToolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.R)));
-            this.عصرالزيتونToolStripMenuItem1.Size = new System.Drawing.Size(250, 22);
+            this.عصرالزيتونToolStripMenuItem1.Size = new System.Drawing.Size(245, 22);
             this.عصرالزيتونToolStripMenuItem1.Text = "عصر الزيتون";
             this.عصرالزيتونToolStripMenuItem1.Click += new System.EventHandler(this.عصرالزيتونToolStripMenuItem1_Click);
             // 
             // حركاتالاستلامToolStripMenuItem1
             // 
             this.حركاتالاستلامToolStripMenuItem1.Name = "حركاتالاستلامToolStripMenuItem1";
-            this.حركاتالاستلامToolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.E)));
-            this.حركاتالاستلامToolStripMenuItem1.Size = new System.Drawing.Size(250, 22);
+            this.حركاتالاستلامToolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.T)));
+            this.حركاتالاستلامToolStripMenuItem1.Size = new System.Drawing.Size(245, 22);
             this.حركاتالاستلامToolStripMenuItem1.Text = "حركات الاستلام";
             this.حركاتالاستلامToolStripMenuItem1.Click += new System.EventHandler(this.حركاتالاستلامToolStripMenuItem1_Click);
             // 
             // تفاصيلتسليمالزيتللزبائنToolStripMenuItem1
             // 
             this.تفاصيلتسليمالزيتللزبائنToolStripMenuItem1.Name = "تفاصيلتسليمالزيتللزبائنToolStripMenuItem1";
-            this.تفاصيلتسليمالزيتللزبائنToolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.W)));
-            this.تفاصيلتسليمالزيتللزبائنToolStripMenuItem1.Size = new System.Drawing.Size(250, 22);
+            this.تفاصيلتسليمالزيتللزبائنToolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.E)));
+            this.تفاصيلتسليمالزيتللزبائنToolStripMenuItem1.Size = new System.Drawing.Size(245, 22);
             this.تفاصيلتسليمالزيتللزبائنToolStripMenuItem1.Text = "تفاصيل تسليم الزيت للزبائن";
             this.تفاصيلتسليمالزيتللزبائنToolStripMenuItem1.Click += new System.EventHandler(this.تفاصيلتسليمالزيتللزبائنToolStripMenuItem1_Click);
             // 
             // تفاصيلحركاتالاستلامToolStripMenuItem1
             // 
             this.تفاصيلحركاتالاستلامToolStripMenuItem1.Name = "تفاصيلحركاتالاستلامToolStripMenuItem1";
-            this.تفاصيلحركاتالاستلامToolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.Q)));
-            this.تفاصيلحركاتالاستلامToolStripMenuItem1.Size = new System.Drawing.Size(250, 22);
+            this.تفاصيلحركاتالاستلامToolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.W)));
+            this.تفاصيلحركاتالاستلامToolStripMenuItem1.Size = new System.Drawing.Size(245, 22);
             this.تفاصيلحركاتالاستلامToolStripMenuItem1.Text = "تفاصيل حركات الاستلام";
             this.تفاصيلحركاتالاستلامToolStripMenuItem1.Click += new System.EventHandler(this.تفاصيلحركاتالاستلامToolStripMenuItem1_Click);
             // 
@@ -461,6 +482,7 @@
             this.فاتورةالمشترياتToolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.G)));
             this.فاتورةالمشترياتToolStripMenuItem1.Size = new System.Drawing.Size(248, 22);
             this.فاتورةالمشترياتToolStripMenuItem1.Text = "فاتورة المشتريات";
+            this.فاتورةالمشترياتToolStripMenuItem1.Click += new System.EventHandler(this.فاتورةالمشترياتToolStripMenuItem1_Click);
             // 
             // مرتجعبيعToolStripMenuItem1
             // 
@@ -468,6 +490,7 @@
             this.مرتجعبيعToolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F)));
             this.مرتجعبيعToolStripMenuItem1.Size = new System.Drawing.Size(248, 22);
             this.مرتجعبيعToolStripMenuItem1.Text = "مرتجع بيع";
+            this.مرتجعبيعToolStripMenuItem1.Click += new System.EventHandler(this.مرتجعبيعToolStripMenuItem1_Click);
             // 
             // فاتورةشراءالزيتمنالزبائنToolStripMenuItem1
             // 
@@ -475,6 +498,7 @@
             this.فاتورةشراءالزيتمنالزبائنToolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.D)));
             this.فاتورةشراءالزيتمنالزبائنToolStripMenuItem1.Size = new System.Drawing.Size(248, 22);
             this.فاتورةشراءالزيتمنالزبائنToolStripMenuItem1.Text = "فاتورة شراء الزيت من الزبائن";
+            this.فاتورةشراءالزيتمنالزبائنToolStripMenuItem1.Click += new System.EventHandler(this.فاتورةشراءالزيتمنالزبائنToolStripMenuItem1_Click);
             // 
             // فاتورةبيعالزبائنToolStripMenuItem
             // 
@@ -482,6 +506,7 @@
             this.فاتورةبيعالزبائنToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.S)));
             this.فاتورةبيعالزبائنToolStripMenuItem.Size = new System.Drawing.Size(248, 22);
             this.فاتورةبيعالزبائنToolStripMenuItem.Text = "فاتورة بيع الزبائن";
+            this.فاتورةبيعالزبائنToolStripMenuItem.Click += new System.EventHandler(this.فاتورةبيعالزبائنToolStripMenuItem_Click);
             // 
             // فاتورةتسليمالزيتللتجارToolStripMenuItem1
             // 
@@ -489,11 +514,14 @@
             this.فاتورةتسليمالزيتللتجارToolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.A)));
             this.فاتورةتسليمالزيتللتجارToolStripMenuItem1.Size = new System.Drawing.Size(248, 22);
             this.فاتورةتسليمالزيتللتجارToolStripMenuItem1.Text = "فاتورة تسليم الزيت للتجار";
+            this.فاتورةتسليمالزيتللتجارToolStripMenuItem1.Click += new System.EventHandler(this.فاتورةتسليمالزيتللتجارToolStripMenuItem1_Click);
             // 
             // المستحقاتToolStripMenuItem
             // 
             this.المستحقاتToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.المستحقاتToolStripMenuItem1});
+            this.المستحقاتToolStripMenuItem1,
+            this.سندقبضToolStripMenuItem,
+            this.سندبيعToolStripMenuItem});
             this.المستحقاتToolStripMenuItem.Name = "المستحقاتToolStripMenuItem";
             this.المستحقاتToolStripMenuItem.Size = new System.Drawing.Size(74, 20);
             this.المستحقاتToolStripMenuItem.Text = "المستحقات";
@@ -502,7 +530,7 @@
             // 
             this.المستحقاتToolStripMenuItem1.Name = "المستحقاتToolStripMenuItem1";
             this.المستحقاتToolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.D3)));
-            this.المستحقاتToolStripMenuItem1.Size = new System.Drawing.Size(165, 22);
+            this.المستحقاتToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.المستحقاتToolStripMenuItem1.Text = "المستحقات";
             this.المستحقاتToolStripMenuItem1.Click += new System.EventHandler(this.المستحقاتToolStripMenuItem1_Click);
             // 
@@ -534,19 +562,19 @@
             // 
             this.الحساباتToolStripMenuItem1.Name = "الحساباتToolStripMenuItem1";
             this.الحساباتToolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.D5)));
-            this.الحساباتToolStripMenuItem1.Size = new System.Drawing.Size(155, 22);
+            this.الحساباتToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.الحساباتToolStripMenuItem1.Text = "الحسابات";
             this.الحساباتToolStripMenuItem1.Click += new System.EventHandler(this.الحساباتToolStripMenuItem1_Click);
             // 
             // labeltime
             // 
             this.labeltime.AutoSize = true;
-            this.labeltime.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.labeltime.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold);
             this.labeltime.ForeColor = System.Drawing.Color.Black;
             this.labeltime.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.labeltime.Location = new System.Drawing.Point(529, 9);
+            this.labeltime.Location = new System.Drawing.Point(529, 5);
             this.labeltime.Name = "labeltime";
-            this.labeltime.Size = new System.Drawing.Size(138, 26);
+            this.labeltime.Size = new System.Drawing.Size(154, 31);
             this.labeltime.TabIndex = 3;
             this.labeltime.Text = "HH:MM:SS";
             // 
@@ -556,7 +584,7 @@
             this.labeldate.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
             this.labeldate.ForeColor = System.Drawing.Color.Black;
             this.labeldate.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.labeldate.Location = new System.Drawing.Point(242, 9);
+            this.labeldate.Location = new System.Drawing.Point(53, 5);
             this.labeldate.Name = "labeldate";
             this.labeldate.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.labeldate.Size = new System.Drawing.Size(174, 26);
@@ -569,7 +597,7 @@
             this.labelday.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
             this.labelday.ForeColor = System.Drawing.Color.Black;
             this.labelday.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.labelday.Location = new System.Drawing.Point(405, 9);
+            this.labelday.Location = new System.Drawing.Point(233, 5);
             this.labelday.Name = "labelday";
             this.labelday.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.labelday.Size = new System.Drawing.Size(80, 26);
@@ -583,7 +611,6 @@
             this.panel_high.Controls.Add(this.panel_options_data);
             this.panel_high.Controls.Add(this.panel_options_calculation);
             this.panel_high.Controls.Add(this.panel_options_managing_products_and_people_Click);
-            this.panel_high.Controls.Add(this.panel_options_users);
             this.panel_high.Controls.Add(this.panel_options_dues);
             this.panel_high.Controls.Add(this.panel_options_main);
             this.panel_high.Controls.Add(this.panel_options_bills);
@@ -597,7 +624,7 @@
             // panel_options_settings
             // 
             this.panel_options_settings.Controls.Add(this.btm_reports);
-            this.panel_options_settings.Controls.Add(this.btn_logOut);
+            this.panel_options_settings.Controls.Add(this.btn_usrs);
             this.panel_options_settings.Controls.Add(this.btn_search);
             this.panel_options_settings.Location = new System.Drawing.Point(88, 588);
             this.panel_options_settings.Name = "panel_options_settings";
@@ -618,21 +645,7 @@
             this.btm_reports.Text = "التقارير";
             this.btm_reports.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btm_reports.UseVisualStyleBackColor = false;
-            // 
-            // btn_logOut
-            // 
-            this.btn_logOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(91)))), ((int)(((byte)(135)))));
-            this.btn_logOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_logOut.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
-            this.btn_logOut.ForeColor = System.Drawing.Color.White;
-            this.btn_logOut.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_logOut.Location = new System.Drawing.Point(446, 4);
-            this.btn_logOut.Name = "btn_logOut";
-            this.btn_logOut.Size = new System.Drawing.Size(192, 47);
-            this.btn_logOut.TabIndex = 3;
-            this.btn_logOut.Text = "تسجيل";
-            this.btn_logOut.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btn_logOut.UseVisualStyleBackColor = false;
+            this.btm_reports.Click += new System.EventHandler(this.Btm_reports_Click);
             // 
             // btn_search
             // 
@@ -648,68 +661,72 @@
             this.btn_search.Text = "البحث";
             this.btn_search.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btn_search.UseVisualStyleBackColor = false;
+            this.btn_search.Click += new System.EventHandler(this.Btn_search_Click);
             // 
             // panel_options_data
             // 
-            this.panel_options_data.Controls.Add(this.button55);
-            this.panel_options_data.Controls.Add(this.button11);
-            this.panel_options_data.Controls.Add(this.button57);
+            this.panel_options_data.Controls.Add(this.btn_save_backUp);
+            this.panel_options_data.Controls.Add(this.btn_press_data);
+            this.panel_options_data.Controls.Add(this.btn_load_backUp);
             this.panel_options_data.Location = new System.Drawing.Point(88, 536);
             this.panel_options_data.Name = "panel_options_data";
             this.panel_options_data.Size = new System.Drawing.Size(1059, 56);
             this.panel_options_data.TabIndex = 4;
             // 
-            // button55
+            // btn_save_backUp
             // 
-            this.button55.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(91)))), ((int)(((byte)(135)))));
-            this.button55.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button55.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
-            this.button55.ForeColor = System.Drawing.Color.White;
-            this.button55.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button55.Location = new System.Drawing.Point(882, 4);
-            this.button55.Name = "button55";
-            this.button55.Size = new System.Drawing.Size(174, 47);
-            this.button55.TabIndex = 3;
-            this.button55.Text = "أخذ نسخة احتياطية";
-            this.button55.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.button55.UseVisualStyleBackColor = false;
+            this.btn_save_backUp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(91)))), ((int)(((byte)(135)))));
+            this.btn_save_backUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_save_backUp.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.btn_save_backUp.ForeColor = System.Drawing.Color.White;
+            this.btn_save_backUp.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btn_save_backUp.Location = new System.Drawing.Point(882, 4);
+            this.btn_save_backUp.Name = "btn_save_backUp";
+            this.btn_save_backUp.Size = new System.Drawing.Size(174, 47);
+            this.btn_save_backUp.TabIndex = 3;
+            this.btn_save_backUp.Text = "أخذ نسخة احتياطية";
+            this.btn_save_backUp.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btn_save_backUp.UseVisualStyleBackColor = false;
+            this.btn_save_backUp.Click += new System.EventHandler(this.Btn_save_backUp_Click);
             // 
-            // button11
+            // btn_press_data
             // 
-            this.button11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(91)))), ((int)(((byte)(135)))));
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
-            this.button11.ForeColor = System.Drawing.Color.White;
-            this.button11.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button11.Location = new System.Drawing.Point(446, 4);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(192, 47);
-            this.button11.TabIndex = 3;
-            this.button11.Text = "بيانات المعصرة";
-            this.button11.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.button11.UseVisualStyleBackColor = false;
+            this.btn_press_data.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(91)))), ((int)(((byte)(135)))));
+            this.btn_press_data.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_press_data.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.btn_press_data.ForeColor = System.Drawing.Color.White;
+            this.btn_press_data.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btn_press_data.Location = new System.Drawing.Point(446, 4);
+            this.btn_press_data.Name = "btn_press_data";
+            this.btn_press_data.Size = new System.Drawing.Size(192, 47);
+            this.btn_press_data.TabIndex = 3;
+            this.btn_press_data.Text = "بيانات المعصرة";
+            this.btn_press_data.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btn_press_data.UseVisualStyleBackColor = false;
+            this.btn_press_data.Click += new System.EventHandler(this.Btn_press_data_Click);
             // 
-            // button57
+            // btn_load_backUp
             // 
-            this.button57.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(91)))), ((int)(((byte)(135)))));
-            this.button57.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button57.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
-            this.button57.ForeColor = System.Drawing.Color.White;
-            this.button57.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button57.Location = new System.Drawing.Point(644, 4);
-            this.button57.Name = "button57";
-            this.button57.Size = new System.Drawing.Size(232, 47);
-            this.button57.TabIndex = 3;
-            this.button57.Text = "استرداد النسخة الاحتياطية";
-            this.button57.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.button57.UseVisualStyleBackColor = false;
+            this.btn_load_backUp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(91)))), ((int)(((byte)(135)))));
+            this.btn_load_backUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_load_backUp.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.btn_load_backUp.ForeColor = System.Drawing.Color.White;
+            this.btn_load_backUp.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btn_load_backUp.Location = new System.Drawing.Point(644, 4);
+            this.btn_load_backUp.Name = "btn_load_backUp";
+            this.btn_load_backUp.Size = new System.Drawing.Size(232, 47);
+            this.btn_load_backUp.TabIndex = 3;
+            this.btn_load_backUp.Text = "استرداد النسخة الاحتياطية";
+            this.btn_load_backUp.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btn_load_backUp.UseVisualStyleBackColor = false;
+            this.btn_load_backUp.Click += new System.EventHandler(this.Btn_load_backUp_Click);
             // 
             // panel_options_calculation
             // 
             this.panel_options_calculation.Controls.Add(this.btn_expenses);
             this.panel_options_calculation.Controls.Add(this.btn_revenues);
             this.panel_options_calculation.Controls.Add(this.btn_treasury);
-            this.panel_options_calculation.Location = new System.Drawing.Point(85, 278);
+            this.panel_options_calculation.Location = new System.Drawing.Point(85, 266);
             this.panel_options_calculation.Name = "panel_options_calculation";
             this.panel_options_calculation.Size = new System.Drawing.Size(1059, 56);
             this.panel_options_calculation.TabIndex = 4;
@@ -771,7 +788,7 @@
             this.panel_options_managing_products_and_people_Click.Controls.Add(this.btn_customers);
             this.panel_options_managing_products_and_people_Click.Controls.Add(this.btn_stores);
             this.panel_options_managing_products_and_people_Click.Controls.Add(this.btn_products);
-            this.panel_options_managing_products_and_people_Click.Location = new System.Drawing.Point(88, 216);
+            this.panel_options_managing_products_and_people_Click.Location = new System.Drawing.Point(85, 195);
             this.panel_options_managing_products_and_people_Click.Name = "panel_options_managing_products_and_people_Click";
             this.panel_options_managing_products_and_people_Click.Size = new System.Drawing.Size(1059, 56);
             this.panel_options_managing_products_and_people_Click.TabIndex = 4;
@@ -872,51 +889,12 @@
             this.btn_products.UseVisualStyleBackColor = false;
             this.btn_products.Click += new System.EventHandler(this.Btn_products_Click);
             // 
-            // panel_options_users
-            // 
-            this.panel_options_users.Controls.Add(this.button50);
-            this.panel_options_users.Controls.Add(this.button52);
-            this.panel_options_users.Location = new System.Drawing.Point(88, 482);
-            this.panel_options_users.Name = "panel_options_users";
-            this.panel_options_users.Size = new System.Drawing.Size(1059, 56);
-            this.panel_options_users.TabIndex = 4;
-            // 
-            // button50
-            // 
-            this.button50.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(91)))), ((int)(((byte)(135)))));
-            this.button50.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button50.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
-            this.button50.ForeColor = System.Drawing.Color.White;
-            this.button50.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button50.Location = new System.Drawing.Point(918, 5);
-            this.button50.Name = "button50";
-            this.button50.Size = new System.Drawing.Size(138, 47);
-            this.button50.TabIndex = 3;
-            this.button50.Text = "اضافة مستخدم";
-            this.button50.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.button50.UseVisualStyleBackColor = false;
-            // 
-            // button52
-            // 
-            this.button52.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(91)))), ((int)(((byte)(135)))));
-            this.button52.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button52.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
-            this.button52.ForeColor = System.Drawing.Color.White;
-            this.button52.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button52.Location = new System.Drawing.Point(704, 5);
-            this.button52.Name = "button52";
-            this.button52.Size = new System.Drawing.Size(208, 47);
-            this.button52.TabIndex = 3;
-            this.button52.Text = "بحث في المستخدمين";
-            this.button52.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.button52.UseVisualStyleBackColor = false;
-            // 
             // panel_options_dues
             // 
             this.panel_options_dues.BackColor = System.Drawing.Color.SteelBlue;
             this.panel_options_dues.Controls.Add(this.btn_catch_receipt);
             this.panel_options_dues.Controls.Add(this.btn_payment_voucher);
-            this.panel_options_dues.Location = new System.Drawing.Point(85, 154);
+            this.panel_options_dues.Location = new System.Drawing.Point(85, 133);
             this.panel_options_dues.Name = "panel_options_dues";
             this.panel_options_dues.Size = new System.Drawing.Size(1059, 56);
             this.panel_options_dues.TabIndex = 4;
@@ -963,7 +941,7 @@
             this.panel_options_main.Controls.Add(this.btn_reciving_movements);
             this.panel_options_main.Location = new System.Drawing.Point(88, 9);
             this.panel_options_main.Name = "panel_options_main";
-            this.panel_options_main.Size = new System.Drawing.Size(1059, 72);
+            this.panel_options_main.Size = new System.Drawing.Size(1059, 56);
             this.panel_options_main.TabIndex = 4;
             this.panel_options_main.Visible = false;
             // 
@@ -974,7 +952,7 @@
             this.btn_birin.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
             this.btn_birin.ForeColor = System.Drawing.Color.White;
             this.btn_birin.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_birin.Location = new System.Drawing.Point(51, 4);
+            this.btn_birin.Location = new System.Drawing.Point(3, 4);
             this.btn_birin.Name = "btn_birin";
             this.btn_birin.Size = new System.Drawing.Size(121, 47);
             this.btn_birin.TabIndex = 3;
@@ -1056,7 +1034,7 @@
             this.panel_options_bills.Controls.Add(this.btn_purchase_bills);
             this.panel_options_bills.Controls.Add(this.btn_oil_purchase_bill_from_customers);
             this.panel_options_bills.Controls.Add(this.btn_sale_return);
-            this.panel_options_bills.Location = new System.Drawing.Point(12, 87);
+            this.panel_options_bills.Location = new System.Drawing.Point(12, 71);
             this.panel_options_bills.Name = "panel_options_bills";
             this.panel_options_bills.Size = new System.Drawing.Size(1135, 56);
             this.panel_options_bills.TabIndex = 4;
@@ -1160,7 +1138,7 @@
             // panelcontrols
             // 
             this.panelcontrols.AutoScroll = true;
-            this.panelcontrols.BackColor = System.Drawing.Color.White;
+            this.panelcontrols.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.panelcontrols.Controls.Add(this.label5);
             this.panelcontrols.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelcontrols.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
@@ -1189,10 +1167,57 @@
             this.timertime.Interval = 1000;
             this.timertime.Tick += new System.EventHandler(this.Timertime_Tick);
             // 
+            // البياناتToolStripMenuItem
+            // 
+            this.البياناتToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.البياناتToolStripMenuItem1});
+            this.البياناتToolStripMenuItem.Name = "البياناتToolStripMenuItem";
+            this.البياناتToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
+            this.البياناتToolStripMenuItem.Text = "البيانات";
+            // 
+            // الاعداداتToolStripMenuItem
+            // 
+            this.الاعداداتToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.الاعداداتToolStripMenuItem1});
+            this.الاعداداتToolStripMenuItem.Name = "الاعداداتToolStripMenuItem";
+            this.الاعداداتToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
+            this.الاعداداتToolStripMenuItem.Text = "الاعدادات";
+            // 
+            // البياناتToolStripMenuItem1
+            // 
+            this.البياناتToolStripMenuItem1.Name = "البياناتToolStripMenuItem1";
+            this.البياناتToolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.D5)));
+            this.البياناتToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.البياناتToolStripMenuItem1.Text = "البيانات";
+            // 
+            // الاعداداتToolStripMenuItem1
+            // 
+            this.الاعداداتToolStripMenuItem1.Name = "الاعداداتToolStripMenuItem1";
+            this.الاعداداتToolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.D6)));
+            this.الاعداداتToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.الاعداداتToolStripMenuItem1.Text = "الاعدادات";
+            // 
+            // سندقبضToolStripMenuItem
+            // 
+            this.سندقبضToolStripMenuItem.Name = "سندقبضToolStripMenuItem";
+            this.سندقبضToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.X)));
+            this.سندقبضToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.سندقبضToolStripMenuItem.Text = "سند قبض";
+            this.سندقبضToolStripMenuItem.Click += new System.EventHandler(this.سندقبضToolStripMenuItem_Click);
+            // 
+            // سندبيعToolStripMenuItem
+            // 
+            this.سندبيعToolStripMenuItem.Name = "سندبيعToolStripMenuItem";
+            this.سندبيعToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.Z)));
+            this.سندبيعToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.سندبيعToolStripMenuItem.Text = "سند دفع";
+            this.سندبيعToolStripMenuItem.Click += new System.EventHandler(this.سندبيعToolStripMenuItem_Click);
+            // 
             // FRM_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ClientSize = new System.Drawing.Size(1366, 749);
             this.Controls.Add(this.panelcontrols);
             this.Controls.Add(this.panel_high);
@@ -1216,7 +1241,6 @@
             this.panel_options_data.ResumeLayout(false);
             this.panel_options_calculation.ResumeLayout(false);
             this.panel_options_managing_products_and_people_Click.ResumeLayout(false);
-            this.panel_options_users.ResumeLayout(false);
             this.panel_options_dues.ResumeLayout(false);
             this.panel_options_main.ResumeLayout(false);
             this.panel_options_bills.ResumeLayout(false);
@@ -1256,17 +1280,14 @@
         public System.Windows.Forms.Button btn_sales_bills;
         private System.Windows.Forms.Panel panel_options_bills;
         private System.Windows.Forms.Panel panel_options_data;
-        public System.Windows.Forms.Button button55;
-        public System.Windows.Forms.Button button57;
+        public System.Windows.Forms.Button btn_save_backUp;
+        public System.Windows.Forms.Button btn_load_backUp;
         private System.Windows.Forms.Panel panel_options_calculation;
         public System.Windows.Forms.Button btn_expenses;
         public System.Windows.Forms.Button btn_revenues;
         public System.Windows.Forms.Button btn_treasury;
         private System.Windows.Forms.Panel panel_options_managing_products_and_people_Click;
         public System.Windows.Forms.Button btn_products;
-        private System.Windows.Forms.Panel panel_options_users;
-        public System.Windows.Forms.Button button50;
-        public System.Windows.Forms.Button button52;
         private System.Windows.Forms.Panel panel_options_dues;
         public System.Windows.Forms.Button btn_catch_receipt;
         public System.Windows.Forms.Button btn_payment_voucher;
@@ -1277,7 +1298,7 @@
         public System.Windows.Forms.Button btn_oil_delivery_details;
         public System.Windows.Forms.Button btn_reciving_movements;
         public System.Windows.Forms.Button btn_oil_delivery_bill_to_dealers;
-        public System.Windows.Forms.Button button11;
+        public System.Windows.Forms.Button btn_press_data;
         public System.Windows.Forms.Button btn_employees;
         public System.Windows.Forms.Button btn_merchants;
         public System.Windows.Forms.Button btn_suppliers;
@@ -1309,5 +1330,11 @@
         public System.Windows.Forms.Button btn_logOut;
         public System.Windows.Forms.Button btn_search;
         public System.Windows.Forms.Button btn_managing_products_and_people;
+        private System.Windows.Forms.ToolStripMenuItem سندقبضToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem سندبيعToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem البياناتToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem البياناتToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem الاعداداتToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem الاعداداتToolStripMenuItem1;
     }
 }

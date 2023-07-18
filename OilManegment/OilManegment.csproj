@@ -58,6 +58,36 @@
     <Compile Include="PL\Forms\FRM_Main.Designer.cs">
       <DependentUpon>FRM_Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\Forms\InternalForms\Select_customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Forms\InternalForms\Select_customer.Designer.cs">
+      <DependentUpon>Select_customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Forms\InternalForms\Select_employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Forms\InternalForms\Select_employee.Designer.cs">
+      <DependentUpon>Select_employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Forms\InternalForms\Select_merchant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Forms\InternalForms\Select_merchant.Designer.cs">
+      <DependentUpon>Select_merchant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Forms\InternalForms\Select_movement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Forms\InternalForms\Select_movement.Designer.cs">
+      <DependentUpon>Select_movement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Forms\InternalForms\Select_store.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Forms\InternalForms\Select_store.Designer.cs">
+      <DependentUpon>Select_store.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\UserControls\Bills\Customer_Sales_Bill.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -111,6 +141,24 @@
     </Compile>
     <Compile Include="PL\UserControls\Calculation\Treasury.Designer.cs">
       <DependentUpon>Treasury.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\UserControls\Data\Load_BackUp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PL\UserControls\Data\Load_BackUp.Designer.cs">
+      <DependentUpon>Load_BackUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\UserControls\Data\Press_Data.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PL\UserControls\Data\Press_Data.Designer.cs">
+      <DependentUpon>Press_Data.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\UserControls\Data\Save_BackUp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PL\UserControls\Data\Save_BackUp.Designer.cs">
+      <DependentUpon>Save_BackUp.cs</DependentUpon>
     </Compile>
     <Compile Include="PL\UserControls\Dues\Catch_Receipt.cs">
       <SubType>UserControl</SubType>
@@ -190,11 +238,32 @@
     <Compile Include="PL\UserControls\Managing_Products_And_People\Suppliers.Designer.cs">
       <DependentUpon>Suppliers.cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\UserControls\Setting\Users.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PL\UserControls\Setting\Users.Designer.cs">
+      <DependentUpon>Users.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SHARED\Style_Form_Class.cs" />
     <EmbeddedResource Include="PL\Forms\FRM_Main.resx">
       <DependentUpon>FRM_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Forms\InternalForms\Select_customer.resx">
+      <DependentUpon>Select_customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Forms\InternalForms\Select_employee.resx">
+      <DependentUpon>Select_employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Forms\InternalForms\Select_merchant.resx">
+      <DependentUpon>Select_merchant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Forms\InternalForms\Select_movement.resx">
+      <DependentUpon>Select_movement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Forms\InternalForms\Select_store.resx">
+      <DependentUpon>Select_store.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\UserControls\Bills\Customer_Sales_Bill.resx">
       <DependentUpon>Customer_Sales_Bill.cs</DependentUpon>
@@ -222,6 +291,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PL\UserControls\Calculation\Treasury.resx">
       <DependentUpon>Treasury.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\UserControls\Data\Load_BackUp.resx">
+      <DependentUpon>Load_BackUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\UserControls\Data\Press_Data.resx">
+      <DependentUpon>Press_Data.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\UserControls\Data\Save_BackUp.resx">
+      <DependentUpon>Save_BackUp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\UserControls\Dues\Catch_Receipt.resx">
       <DependentUpon>Catch_Receipt.cs</DependentUpon>
@@ -261,6 +339,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PL\UserControls\Managing_Products_And_People\Suppliers.resx">
       <DependentUpon>Suppliers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\UserControls\Setting\Users.resx">
+      <DependentUpon>Users.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

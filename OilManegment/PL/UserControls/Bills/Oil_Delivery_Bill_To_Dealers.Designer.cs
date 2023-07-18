@@ -33,19 +33,22 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txt_merchantName = new System.Windows.Forms.TextBox();
+            this.btn_open_MerchantNameForm = new System.Windows.Forms.Button();
+            this.textBox7 = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label28 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.btn_close = new System.Windows.Forms.Button();
             this.btn_serch = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
@@ -61,20 +64,18 @@
             this.label12 = new System.Windows.Forms.Label();
             this.btn_edit = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.btn_add = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.btn_refresh = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -82,7 +83,6 @@
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -95,18 +95,18 @@
             this.panel1.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1153, 34);
+            this.panel1.Size = new System.Drawing.Size(1153, 37);
             this.panel1.TabIndex = 17;
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.label17.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold);
             this.label17.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label17.Location = new System.Drawing.Point(532, 4);
+            this.label17.Location = new System.Drawing.Point(621, 4);
             this.label17.Name = "label17";
             this.label17.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label17.Size = new System.Drawing.Size(215, 26);
+            this.label17.Size = new System.Drawing.Size(235, 31);
             this.label17.TabIndex = 25;
             this.label17.Text = "فاتورة تسليم الزيت للتجار";
             // 
@@ -117,7 +117,7 @@
             this.label1.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(1033, 3);
+            this.label1.Location = new System.Drawing.Point(1013, 3);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(0, 20);
             this.label1.TabIndex = 4;
@@ -129,16 +129,16 @@
             this.label2.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label2.Location = new System.Drawing.Point(1043, 35);
+            this.label2.Location = new System.Drawing.Point(1025, 38);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(0, 20);
             this.label2.TabIndex = 3;
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txt_merchantName);
+            this.groupBox1.Controls.Add(this.btn_open_MerchantNameForm);
             this.groupBox1.Controls.Add(this.textBox7);
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.dateTimePicker1);
             this.groupBox1.Controls.Add(this.label28);
             this.groupBox1.Controls.Add(this.label22);
@@ -148,121 +148,148 @@
             this.groupBox1.Controls.Add(this.txtName);
             this.groupBox1.Controls.Add(this.label27);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold);
-            this.groupBox1.Location = new System.Drawing.Point(0, 34);
+            this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 19F, System.Drawing.FontStyle.Bold);
+            this.groupBox1.Location = new System.Drawing.Point(0, 37);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.groupBox1.Size = new System.Drawing.Size(1153, 189);
+            this.groupBox1.Size = new System.Drawing.Size(1153, 168);
             this.groupBox1.TabIndex = 208;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "بيانات فاتورة المبيعات:";
+            this.groupBox1.Text = "بيانات الفاتورة :";
             // 
-            // comboBox1
+            // txt_merchantName
             // 
-            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox1.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(701, 64);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(292, 32);
-            this.comboBox1.TabIndex = 26;
+            this.txt_merchantName.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txt_merchantName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_merchantName.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.txt_merchantName.Location = new System.Drawing.Point(626, 75);
+            this.txt_merchantName.Name = "txt_merchantName";
+            this.txt_merchantName.Size = new System.Drawing.Size(340, 35);
+            this.txt_merchantName.TabIndex = 221;
+            this.txt_merchantName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // button1
+            // btn_open_MerchantNameForm
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.button1.Location = new System.Drawing.Point(996, 64);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(33, 32);
-            this.button1.TabIndex = 25;
-            this.button1.Text = "...";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_open_MerchantNameForm.FlatAppearance.BorderSize = 0;
+            this.btn_open_MerchantNameForm.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
+            this.btn_open_MerchantNameForm.Location = new System.Drawing.Point(971, 75);
+            this.btn_open_MerchantNameForm.Name = "btn_open_MerchantNameForm";
+            this.btn_open_MerchantNameForm.Size = new System.Drawing.Size(46, 35);
+            this.btn_open_MerchantNameForm.TabIndex = 220;
+            this.btn_open_MerchantNameForm.Text = "...";
+            this.btn_open_MerchantNameForm.UseVisualStyleBackColor = true;
+            this.btn_open_MerchantNameForm.Click += new System.EventHandler(this.Btn_open_MerchantNameForm_Click);
+            // 
+            // textBox7
+            // 
+            this.textBox7.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox7.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.textBox7.Location = new System.Drawing.Point(17, 77);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(340, 35);
+            this.textBox7.TabIndex = 27;
+            this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold);
-            this.dateTimePicker1.Location = new System.Drawing.Point(15, 29);
+            this.dateTimePicker1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.dateTimePicker1.Location = new System.Drawing.Point(17, 31);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.dateTimePicker1.Size = new System.Drawing.Size(292, 32);
+            this.dateTimePicker1.Size = new System.Drawing.Size(340, 35);
             this.dateTimePicker1.TabIndex = 24;
             // 
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold);
-            this.label28.Location = new System.Drawing.Point(349, 34);
+            this.label28.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.label28.Location = new System.Drawing.Point(407, 37);
             this.label28.Name = "label28";
             this.label28.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label28.Size = new System.Drawing.Size(61, 25);
+            this.label28.Size = new System.Drawing.Size(66, 26);
             this.label28.TabIndex = 16;
             this.label28.Text = "التاريخ";
             // 
             // label22
             // 
-            this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold);
-            this.label22.Location = new System.Drawing.Point(351, 72);
+            this.label22.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.label22.Location = new System.Drawing.Point(409, 79);
             this.label22.Name = "label22";
             this.label22.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label22.Size = new System.Drawing.Size(61, 25);
+            this.label22.Size = new System.Drawing.Size(67, 26);
             this.label22.TabIndex = 12;
             this.label22.Text = "الكمية:";
             // 
             // label20
             // 
-            this.label20.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold);
-            this.label20.Location = new System.Drawing.Point(1037, 104);
+            this.label20.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.label20.Location = new System.Drawing.Point(1018, 118);
             this.label20.Name = "label20";
             this.label20.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label20.Size = new System.Drawing.Size(83, 25);
+            this.label20.Size = new System.Drawing.Size(91, 26);
             this.label20.TabIndex = 10;
             this.label20.Text = "ملاحظات:";
             // 
             // label19
             // 
-            this.label19.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold);
-            this.label19.Location = new System.Drawing.Point(1035, 64);
+            this.label19.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.label19.Location = new System.Drawing.Point(1018, 79);
             this.label19.Name = "label19";
             this.label19.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label19.Size = new System.Drawing.Size(94, 25);
+            this.label19.Size = new System.Drawing.Size(102, 26);
             this.label19.TabIndex = 8;
             this.label19.Text = "اسم التاجر:";
             // 
+            // textBox6
+            // 
+            this.textBox6.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox6.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.textBox6.Location = new System.Drawing.Point(626, 116);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(340, 35);
+            this.textBox6.TabIndex = 7;
+            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // txtName
             // 
-            this.txtName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtName.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txtName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtName.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold);
-            this.txtName.Location = new System.Drawing.Point(701, 30);
+            this.txtName.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.txtName.Location = new System.Drawing.Point(626, 33);
             this.txtName.Name = "txtName";
-            this.txtName.ReadOnly = true;
-            this.txtName.Size = new System.Drawing.Size(292, 32);
+            this.txtName.Size = new System.Drawing.Size(340, 35);
             this.txtName.TabIndex = 7;
             this.txtName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label27
             // 
-            this.label27.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold);
-            this.label27.Location = new System.Drawing.Point(1035, 32);
+            this.label27.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.label27.Location = new System.Drawing.Point(1015, 35);
             this.label27.Name = "label27";
             this.label27.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label27.Size = new System.Drawing.Size(106, 25);
+            this.label27.Size = new System.Drawing.Size(113, 26);
             this.label27.TabIndex = 6;
             this.label27.Text = "رقم الفاتورة:";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 205);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(1153, 405);
+            this.dataGridView1.TabIndex = 217;
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.panel2);
             this.panel4.Controls.Add(this.btn_close);
             this.panel4.Controls.Add(this.btn_serch);
@@ -276,255 +303,26 @@
             this.panel4.Controls.Add(this.btn_add);
             this.panel4.Controls.Add(this.panel3);
             this.panel4.Controls.Add(this.btn_refresh);
-            this.panel4.Controls.Add(this.label7);
+            this.panel4.Controls.Add(this.label23);
             this.panel4.Controls.Add(this.label6);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel4.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
-            this.panel4.Location = new System.Drawing.Point(0, 615);
+            this.panel4.Location = new System.Drawing.Point(0, 610);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1153, 59);
-            this.panel4.TabIndex = 210;
+            this.panel4.Size = new System.Drawing.Size(1153, 64);
+            this.panel4.TabIndex = 216;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(91)))), ((int)(((byte)(135)))));
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.label9);
+            this.panel2.Controls.Add(this.label10);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel2.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
-            this.panel2.Location = new System.Drawing.Point(182, 0);
+            this.panel2.Location = new System.Drawing.Point(167, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(32, 59);
+            this.panel2.Size = new System.Drawing.Size(22, 62);
             this.panel2.TabIndex = 22;
-            // 
-            // label3
-            // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label3.Location = new System.Drawing.Point(-88, 3);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(0, 20);
-            this.label3.TabIndex = 4;
-            // 
-            // label4
-            // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label4.Location = new System.Drawing.Point(-78, 35);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(0, 20);
-            this.label4.TabIndex = 3;
-            // 
-            // btn_close
-            // 
-            this.btn_close.BackColor = System.Drawing.Color.SteelBlue;
-            this.btn_close.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btn_close.FlatAppearance.BorderSize = 0;
-            this.btn_close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_close.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
-            this.btn_close.ForeColor = System.Drawing.Color.White;
-            this.btn_close.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_close.Location = new System.Drawing.Point(0, 0);
-            this.btn_close.Name = "btn_close";
-            this.btn_close.Size = new System.Drawing.Size(159, 59);
-            this.btn_close.TabIndex = 21;
-            this.btn_close.Text = "اغلاق";
-            this.btn_close.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btn_close.UseVisualStyleBackColor = false;
-            // 
-            // btn_serch
-            // 
-            this.btn_serch.BackColor = System.Drawing.Color.SteelBlue;
-            this.btn_serch.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btn_serch.FlatAppearance.BorderSize = 0;
-            this.btn_serch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_serch.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
-            this.btn_serch.ForeColor = System.Drawing.Color.White;
-            this.btn_serch.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_serch.Location = new System.Drawing.Point(214, 0);
-            this.btn_serch.Name = "btn_serch";
-            this.btn_serch.Size = new System.Drawing.Size(139, 59);
-            this.btn_serch.TabIndex = 19;
-            this.btn_serch.Text = "بحث";
-            this.btn_serch.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btn_serch.UseVisualStyleBackColor = false;
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(91)))), ((int)(((byte)(135)))));
-            this.panel8.Controls.Add(this.label15);
-            this.panel8.Controls.Add(this.label16);
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel8.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
-            this.panel8.Location = new System.Drawing.Point(353, 0);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(21, 59);
-            this.panel8.TabIndex = 18;
-            // 
-            // label15
-            // 
-            this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
-            this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label15.Location = new System.Drawing.Point(-99, 3);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(0, 20);
-            this.label15.TabIndex = 4;
-            // 
-            // label16
-            // 
-            this.label16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
-            this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label16.Location = new System.Drawing.Point(-89, 35);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(0, 20);
-            this.label16.TabIndex = 3;
-            // 
-            // btn_report
-            // 
-            this.btn_report.BackColor = System.Drawing.Color.SteelBlue;
-            this.btn_report.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btn_report.FlatAppearance.BorderSize = 0;
-            this.btn_report.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_report.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
-            this.btn_report.ForeColor = System.Drawing.Color.White;
-            this.btn_report.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_report.Location = new System.Drawing.Point(374, 0);
-            this.btn_report.Name = "btn_report";
-            this.btn_report.Size = new System.Drawing.Size(139, 59);
-            this.btn_report.TabIndex = 17;
-            this.btn_report.Text = "تقرير";
-            this.btn_report.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btn_report.UseVisualStyleBackColor = false;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(91)))), ((int)(((byte)(135)))));
-            this.panel7.Controls.Add(this.label13);
-            this.panel7.Controls.Add(this.label14);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel7.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
-            this.panel7.Location = new System.Drawing.Point(513, 0);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(21, 59);
-            this.panel7.TabIndex = 16;
-            // 
-            // label13
-            // 
-            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
-            this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label13.Location = new System.Drawing.Point(-99, 3);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(0, 20);
-            this.label13.TabIndex = 4;
-            // 
-            // label14
-            // 
-            this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
-            this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label14.Location = new System.Drawing.Point(-89, 35);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(0, 20);
-            this.label14.TabIndex = 3;
-            // 
-            // btn_delete
-            // 
-            this.btn_delete.BackColor = System.Drawing.Color.SteelBlue;
-            this.btn_delete.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btn_delete.FlatAppearance.BorderSize = 0;
-            this.btn_delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_delete.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
-            this.btn_delete.ForeColor = System.Drawing.Color.White;
-            this.btn_delete.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_delete.Location = new System.Drawing.Point(534, 0);
-            this.btn_delete.Name = "btn_delete";
-            this.btn_delete.Size = new System.Drawing.Size(139, 59);
-            this.btn_delete.TabIndex = 15;
-            this.btn_delete.Text = "حذف";
-            this.btn_delete.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btn_delete.UseVisualStyleBackColor = false;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(91)))), ((int)(((byte)(135)))));
-            this.panel6.Controls.Add(this.label11);
-            this.panel6.Controls.Add(this.label12);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel6.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
-            this.panel6.Location = new System.Drawing.Point(673, 0);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(21, 59);
-            this.panel6.TabIndex = 14;
-            // 
-            // label11
-            // 
-            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
-            this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label11.Location = new System.Drawing.Point(-99, 3);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(0, 20);
-            this.label11.TabIndex = 4;
-            // 
-            // label12
-            // 
-            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
-            this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label12.Location = new System.Drawing.Point(-89, 35);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(0, 20);
-            this.label12.TabIndex = 3;
-            // 
-            // btn_edit
-            // 
-            this.btn_edit.BackColor = System.Drawing.Color.SteelBlue;
-            this.btn_edit.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btn_edit.FlatAppearance.BorderSize = 0;
-            this.btn_edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_edit.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
-            this.btn_edit.ForeColor = System.Drawing.Color.White;
-            this.btn_edit.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_edit.Location = new System.Drawing.Point(694, 0);
-            this.btn_edit.Name = "btn_edit";
-            this.btn_edit.Size = new System.Drawing.Size(139, 59);
-            this.btn_edit.TabIndex = 13;
-            this.btn_edit.Text = "تعديل";
-            this.btn_edit.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btn_edit.UseVisualStyleBackColor = false;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(91)))), ((int)(((byte)(135)))));
-            this.panel5.Controls.Add(this.label9);
-            this.panel5.Controls.Add(this.label10);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel5.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
-            this.panel5.Location = new System.Drawing.Point(833, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(21, 59);
-            this.panel5.TabIndex = 12;
             // 
             // label9
             // 
@@ -533,7 +331,7 @@
             this.label9.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
             this.label9.ForeColor = System.Drawing.Color.White;
             this.label9.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label9.Location = new System.Drawing.Point(-99, 3);
+            this.label9.Location = new System.Drawing.Point(-118, 3);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(0, 20);
             this.label9.TabIndex = 4;
@@ -545,10 +343,239 @@
             this.label10.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
             this.label10.ForeColor = System.Drawing.Color.White;
             this.label10.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label10.Location = new System.Drawing.Point(-89, 35);
+            this.label10.Location = new System.Drawing.Point(-106, 38);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(0, 20);
             this.label10.TabIndex = 3;
+            // 
+            // btn_close
+            // 
+            this.btn_close.BackColor = System.Drawing.Color.SteelBlue;
+            this.btn_close.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btn_close.FlatAppearance.BorderSize = 0;
+            this.btn_close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_close.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.btn_close.ForeColor = System.Drawing.Color.White;
+            this.btn_close.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btn_close.Location = new System.Drawing.Point(0, 0);
+            this.btn_close.Name = "btn_close";
+            this.btn_close.Size = new System.Drawing.Size(142, 62);
+            this.btn_close.TabIndex = 26;
+            this.btn_close.Text = "اغلاق";
+            this.btn_close.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btn_close.UseVisualStyleBackColor = false;
+            // 
+            // btn_serch
+            // 
+            this.btn_serch.BackColor = System.Drawing.Color.SteelBlue;
+            this.btn_serch.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btn_serch.FlatAppearance.BorderSize = 0;
+            this.btn_serch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_serch.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.btn_serch.ForeColor = System.Drawing.Color.White;
+            this.btn_serch.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btn_serch.Location = new System.Drawing.Point(189, 0);
+            this.btn_serch.Name = "btn_serch";
+            this.btn_serch.Size = new System.Drawing.Size(154, 62);
+            this.btn_serch.TabIndex = 25;
+            this.btn_serch.Text = "بحث";
+            this.btn_serch.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btn_serch.UseVisualStyleBackColor = false;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(91)))), ((int)(((byte)(135)))));
+            this.panel8.Controls.Add(this.label15);
+            this.panel8.Controls.Add(this.label16);
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel8.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
+            this.panel8.Location = new System.Drawing.Point(343, 0);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(24, 62);
+            this.panel8.TabIndex = 18;
+            // 
+            // label15
+            // 
+            this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
+            this.label15.ForeColor = System.Drawing.Color.White;
+            this.label15.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label15.Location = new System.Drawing.Point(-115, 3);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(0, 20);
+            this.label15.TabIndex = 4;
+            // 
+            // label16
+            // 
+            this.label16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
+            this.label16.ForeColor = System.Drawing.Color.White;
+            this.label16.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label16.Location = new System.Drawing.Point(-104, 38);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(0, 20);
+            this.label16.TabIndex = 3;
+            // 
+            // btn_report
+            // 
+            this.btn_report.BackColor = System.Drawing.Color.SteelBlue;
+            this.btn_report.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btn_report.FlatAppearance.BorderSize = 0;
+            this.btn_report.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_report.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.btn_report.ForeColor = System.Drawing.Color.White;
+            this.btn_report.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btn_report.Location = new System.Drawing.Point(367, 0);
+            this.btn_report.Name = "btn_report";
+            this.btn_report.Size = new System.Drawing.Size(143, 62);
+            this.btn_report.TabIndex = 24;
+            this.btn_report.Text = "تقرير";
+            this.btn_report.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btn_report.UseVisualStyleBackColor = false;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(91)))), ((int)(((byte)(135)))));
+            this.panel7.Controls.Add(this.label13);
+            this.panel7.Controls.Add(this.label14);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel7.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
+            this.panel7.Location = new System.Drawing.Point(510, 0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(24, 62);
+            this.panel7.TabIndex = 16;
+            // 
+            // label13
+            // 
+            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
+            this.label13.ForeColor = System.Drawing.Color.White;
+            this.label13.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label13.Location = new System.Drawing.Point(-115, 3);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(0, 20);
+            this.label13.TabIndex = 4;
+            // 
+            // label14
+            // 
+            this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
+            this.label14.ForeColor = System.Drawing.Color.White;
+            this.label14.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label14.Location = new System.Drawing.Point(-104, 38);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(0, 20);
+            this.label14.TabIndex = 3;
+            // 
+            // btn_delete
+            // 
+            this.btn_delete.BackColor = System.Drawing.Color.SteelBlue;
+            this.btn_delete.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btn_delete.FlatAppearance.BorderSize = 0;
+            this.btn_delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_delete.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.btn_delete.ForeColor = System.Drawing.Color.White;
+            this.btn_delete.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btn_delete.Location = new System.Drawing.Point(534, 0);
+            this.btn_delete.Name = "btn_delete";
+            this.btn_delete.Size = new System.Drawing.Size(135, 62);
+            this.btn_delete.TabIndex = 23;
+            this.btn_delete.Text = "حذف";
+            this.btn_delete.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btn_delete.UseVisualStyleBackColor = false;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(91)))), ((int)(((byte)(135)))));
+            this.panel6.Controls.Add(this.label11);
+            this.panel6.Controls.Add(this.label12);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel6.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
+            this.panel6.Location = new System.Drawing.Point(669, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(24, 62);
+            this.panel6.TabIndex = 14;
+            // 
+            // label11
+            // 
+            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label11.Location = new System.Drawing.Point(-115, 3);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(0, 20);
+            this.label11.TabIndex = 4;
+            // 
+            // label12
+            // 
+            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label12.Location = new System.Drawing.Point(-104, 38);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(0, 20);
+            this.label12.TabIndex = 3;
+            // 
+            // btn_edit
+            // 
+            this.btn_edit.BackColor = System.Drawing.Color.SteelBlue;
+            this.btn_edit.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btn_edit.FlatAppearance.BorderSize = 0;
+            this.btn_edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_edit.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.btn_edit.ForeColor = System.Drawing.Color.White;
+            this.btn_edit.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btn_edit.Location = new System.Drawing.Point(693, 0);
+            this.btn_edit.Name = "btn_edit";
+            this.btn_edit.Size = new System.Drawing.Size(136, 62);
+            this.btn_edit.TabIndex = 22;
+            this.btn_edit.Text = "تعديل";
+            this.btn_edit.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btn_edit.UseVisualStyleBackColor = false;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(91)))), ((int)(((byte)(135)))));
+            this.panel5.Controls.Add(this.label18);
+            this.panel5.Controls.Add(this.label3);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel5.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
+            this.panel5.Location = new System.Drawing.Point(829, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(24, 62);
+            this.panel5.TabIndex = 12;
+            // 
+            // label18
+            // 
+            this.label18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
+            this.label18.ForeColor = System.Drawing.Color.White;
+            this.label18.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label18.Location = new System.Drawing.Point(-115, 3);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(0, 20);
+            this.label18.TabIndex = 4;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label3.Location = new System.Drawing.Point(-104, 38);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(0, 20);
+            this.label3.TabIndex = 3;
             // 
             // btn_add
             // 
@@ -556,13 +583,13 @@
             this.btn_add.Dock = System.Windows.Forms.DockStyle.Right;
             this.btn_add.FlatAppearance.BorderSize = 0;
             this.btn_add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_add.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
+            this.btn_add.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
             this.btn_add.ForeColor = System.Drawing.Color.White;
             this.btn_add.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_add.Location = new System.Drawing.Point(854, 0);
+            this.btn_add.Location = new System.Drawing.Point(853, 0);
             this.btn_add.Name = "btn_add";
-            this.btn_add.Size = new System.Drawing.Size(139, 59);
-            this.btn_add.TabIndex = 11;
+            this.btn_add.Size = new System.Drawing.Size(136, 62);
+            this.btn_add.TabIndex = 21;
             this.btn_add.Text = "اضافة";
             this.btn_add.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btn_add.UseVisualStyleBackColor = false;
@@ -570,14 +597,26 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(91)))), ((int)(((byte)(135)))));
+            this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.label5);
-            this.panel3.Controls.Add(this.label8);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel3.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
-            this.panel3.Location = new System.Drawing.Point(993, 0);
+            this.panel3.Location = new System.Drawing.Point(989, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(21, 59);
+            this.panel3.Size = new System.Drawing.Size(24, 62);
             this.panel3.TabIndex = 10;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label4.Location = new System.Drawing.Point(-115, 3);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(0, 20);
+            this.label4.TabIndex = 4;
             // 
             // label5
             // 
@@ -586,22 +625,10 @@
             this.label5.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label5.Location = new System.Drawing.Point(-99, 3);
+            this.label5.Location = new System.Drawing.Point(-104, 38);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(0, 20);
-            this.label5.TabIndex = 4;
-            // 
-            // label8
-            // 
-            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label8.Location = new System.Drawing.Point(-89, 35);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(0, 20);
-            this.label8.TabIndex = 3;
+            this.label5.TabIndex = 3;
             // 
             // btn_refresh
             // 
@@ -609,28 +636,28 @@
             this.btn_refresh.Dock = System.Windows.Forms.DockStyle.Right;
             this.btn_refresh.FlatAppearance.BorderSize = 0;
             this.btn_refresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_refresh.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
+            this.btn_refresh.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
             this.btn_refresh.ForeColor = System.Drawing.Color.White;
             this.btn_refresh.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_refresh.Location = new System.Drawing.Point(1014, 0);
+            this.btn_refresh.Location = new System.Drawing.Point(1013, 0);
             this.btn_refresh.Name = "btn_refresh";
-            this.btn_refresh.Size = new System.Drawing.Size(139, 59);
-            this.btn_refresh.TabIndex = 5;
+            this.btn_refresh.Size = new System.Drawing.Size(138, 62);
+            this.btn_refresh.TabIndex = 20;
             this.btn_refresh.Text = "تحديث";
             this.btn_refresh.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btn_refresh.UseVisualStyleBackColor = false;
             // 
-            // label7
+            // label23
             // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label7.Location = new System.Drawing.Point(1033, 3);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(0, 20);
-            this.label7.TabIndex = 4;
+            this.label23.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
+            this.label23.ForeColor = System.Drawing.Color.White;
+            this.label23.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label23.Location = new System.Drawing.Point(1011, 3);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(0, 20);
+            this.label23.TabIndex = 4;
             // 
             // label6
             // 
@@ -639,62 +666,30 @@
             this.label6.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label6.Location = new System.Drawing.Point(1043, 35);
+            this.label6.Location = new System.Drawing.Point(1023, 38);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(0, 20);
             this.label6.TabIndex = 3;
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 256);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1153, 359);
-            this.dataGridView1.TabIndex = 211;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox6.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox6.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold);
-            this.textBox6.Location = new System.Drawing.Point(701, 102);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.ReadOnly = true;
-            this.textBox6.Size = new System.Drawing.Size(292, 32);
-            this.textBox6.TabIndex = 7;
-            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox7.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox7.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold);
-            this.textBox7.Location = new System.Drawing.Point(15, 70);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.ReadOnly = true;
-            this.textBox7.Size = new System.Drawing.Size(292, 32);
-            this.textBox7.TabIndex = 27;
-            this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // Oil_Delivery_Bill_To_Dealers
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 26F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
-            this.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.Margin = new System.Windows.Forms.Padding(7);
             this.Name = "Oil_Delivery_Bill_To_Dealers";
             this.Size = new System.Drawing.Size(1153, 674);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -709,7 +704,6 @@
             this.panel5.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -721,8 +715,6 @@
         public System.Windows.Forms.Label label1;
         public System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label22;
@@ -730,10 +722,13 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel2;
-        public System.Windows.Forms.Label label3;
-        public System.Windows.Forms.Label label4;
+        public System.Windows.Forms.Label label9;
+        public System.Windows.Forms.Label label10;
         public System.Windows.Forms.Button btn_close;
         public System.Windows.Forms.Button btn_serch;
         private System.Windows.Forms.Panel panel8;
@@ -749,17 +744,16 @@
         public System.Windows.Forms.Label label12;
         public System.Windows.Forms.Button btn_edit;
         private System.Windows.Forms.Panel panel5;
-        public System.Windows.Forms.Label label9;
-        public System.Windows.Forms.Label label10;
+        public System.Windows.Forms.Label label18;
+        public System.Windows.Forms.Label label3;
         public System.Windows.Forms.Button btn_add;
         private System.Windows.Forms.Panel panel3;
+        public System.Windows.Forms.Label label4;
         public System.Windows.Forms.Label label5;
-        public System.Windows.Forms.Label label8;
         public System.Windows.Forms.Button btn_refresh;
-        public System.Windows.Forms.Label label7;
+        public System.Windows.Forms.Label label23;
         public System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txt_merchantName;
+        private System.Windows.Forms.Button btn_open_MerchantNameForm;
     }
 }

@@ -166,12 +166,6 @@ namespace OilManegment.PL.Forms
             movesidepanel(btn_calculation);
         }
 
-        private void Btn_usrs_Click(object sender, EventArgs e)
-        {
-            panelHighDock(panel_options_users);
-            movesidepanel(btn_usrs);
-        }
-
         private void Btn_data_Click(object sender, EventArgs e)
         {
             panelHighDock(panel_options_data);
@@ -287,7 +281,6 @@ namespace OilManegment.PL.Forms
             UserControls.Dues.Payment_Voucher Us_payment_voucher = new UserControls.Dues.Payment_Voucher();
             addtocontrolspanel(Us_payment_voucher);
             moveCurrentBtn(btn_payment_voucher);
-
         }
 
         //managing_products_and_people
@@ -296,7 +289,6 @@ namespace OilManegment.PL.Forms
             UserControls.Managing_Products_And_People.Products Us_products = new UserControls.Managing_Products_And_People.Products();
             addtocontrolspanel(Us_products);
             moveCurrentBtn(btn_products);
-
         }
 
         private void Btn_stores_Click_1(object sender, EventArgs e)
@@ -304,7 +296,6 @@ namespace OilManegment.PL.Forms
             UserControls.Managing_Products_And_People.Stores Us_stores = new UserControls.Managing_Products_And_People.Stores();
             addtocontrolspanel(Us_stores);
             moveCurrentBtn(btn_stores);
-
         }
 
         private void Btn_customers_Click_1(object sender, EventArgs e)
@@ -312,7 +303,6 @@ namespace OilManegment.PL.Forms
             UserControls.Managing_Products_And_People.Customers Us = new UserControls.Managing_Products_And_People.Customers();
             addtocontrolspanel(Us);
             moveCurrentBtn(btn_customers);
-
         }
 
         private void Btn_suppliers_Click_1(object sender, EventArgs e)
@@ -320,7 +310,6 @@ namespace OilManegment.PL.Forms
             UserControls.Managing_Products_And_People.Suppliers Us = new UserControls.Managing_Products_And_People.Suppliers();
             addtocontrolspanel(Us);
             moveCurrentBtn(btn_suppliers);
-
         }
 
         private void Btn_merchants_Click(object sender, EventArgs e)
@@ -328,7 +317,6 @@ namespace OilManegment.PL.Forms
             UserControls.Managing_Products_And_People.Merchants Us = new UserControls.Managing_Products_And_People.Merchants();
             addtocontrolspanel(Us);
             moveCurrentBtn(btn_merchants);
-
         }
 
         private void Btn_employees_Click(object sender, EventArgs e)
@@ -336,7 +324,6 @@ namespace OilManegment.PL.Forms
             UserControls.Managing_Products_And_People.Employees Us = new UserControls.Managing_Products_And_People.Employees();
             addtocontrolspanel(Us);
             moveCurrentBtn(btn_employees);
-
         }
 
         //calculation
@@ -352,7 +339,6 @@ namespace OilManegment.PL.Forms
             UserControls.Calculation.Revenues Us = new UserControls.Calculation.Revenues();
             addtocontrolspanel(Us);
             moveCurrentBtn(btn_revenues);
-
         }
 
         private void Btn_treasury_Click(object sender, EventArgs e)
@@ -360,41 +346,91 @@ namespace OilManegment.PL.Forms
             UserControls.Calculation.Treasury Us = new UserControls.Calculation.Treasury();
             addtocontrolspanel(Us);
             moveCurrentBtn(btn_treasury);
+        }
+
+        //data
+        private void Btn_save_backUp_Click(object sender, EventArgs e)
+        {
+            UserControls.Data.Save_BackUp Us = new UserControls.Data.Save_BackUp();
+            addtocontrolspanel(Us);
+            moveCurrentBtn(btn_save_backUp);
+        }
+
+        private void Btn_load_backUp_Click(object sender, EventArgs e)
+        {
+            UserControls.Data.Load_BackUp Us = new UserControls.Data.Load_BackUp();
+            addtocontrolspanel(Us);
+            moveCurrentBtn(btn_load_backUp);
+        }
+            
+        private void Btn_press_data_Click(object sender, EventArgs e)
+        {
+            UserControls.Data.Press_Data Us = new UserControls.Data.Press_Data();
+            addtocontrolspanel(Us);
+            moveCurrentBtn(btn_press_data);
+        }
+
+        //options
+        private void Btm_reports_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_search_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_usrs_Click(object sender, EventArgs e)
+        {
+            UserControls.Setting.Users Us = new UserControls.Setting.Users();
+            addtocontrolspanel(Us);
+            moveCurrentBtn(btn_usrs);
+        }
+
+        private void Btn_logOut_Click(object sender, EventArgs e)
+        {
 
         }
 
         //----------------------------------menuItem
 
 
+        private void الرئيسيةToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Btn_main_Click(sender, e);
+        }
         private void البيرينToolStripMenuItem1_Click(object sender, EventArgs e)
         {
+            Btn_main_Click(sender, e);
             Btn_birin_Click(sender,e);
         }
 
         private void عصرالزيتونToolStripMenuItem1_Click(object sender, EventArgs e)
         {
+            Btn_main_Click(sender, e);
             Btn_squeez_oliv_Click(sender, e);
         }
 
         private void حركاتالاستلامToolStripMenuItem1_Click(object sender, EventArgs e)
         {
+            Btn_main_Click(sender, e);
             Btn_reciving_movements_Click(sender, e);
         }
 
         private void تفاصيلتسليمالزيتللزبائنToolStripMenuItem1_Click(object sender, EventArgs e)
         {
+            Btn_main_Click(sender, e);
             Btn_oil_delivery_details_Click(sender, e);
         }
 
         private void تفاصيلحركاتالاستلامToolStripMenuItem1_Click(object sender, EventArgs e)
         {
+            Btn_main_Click(sender, e);
             Btn_receiving_movements_detils_Click(sender, e);
         }
 
-        private void الرئيسيةToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            Btn_main_Click(sender, e);
-        }
+
 
         private void الفواتيرToolStripMenuItem1_Click(object sender, EventArgs e)
         {
@@ -403,6 +439,7 @@ namespace OilManegment.PL.Forms
 
         private void فاتورةالمبيعاتToolStripMenuItem1_Click(object sender, EventArgs e)
         {
+            Btn_bills_Click(sender, e);
             Btn_sales_bills_Click(sender, e);
         }
 
@@ -421,7 +458,48 @@ namespace OilManegment.PL.Forms
             Btn_calculation_Click(sender, e);
         }
 
-   
+        private void سندقبضToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void سندبيعToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void فاتورةالمشترياتToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Btn_bills_Click(sender, e);
+            Btn_purchase_bills_Click(sender, e);
+        }
+
+        private void مرتجعبيعToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Btn_bills_Click(sender, e);
+            Btn_sale_return_Click(sender, e);
+        }
+
+        private void فاتورةشراءالزيتمنالزبائنToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Btn_bills_Click(sender, e);
+            Btn_oil_purchase_bill_from_customers_Click(sender, e);
+        }
+
+        private void فاتورةبيعالزبائنToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Btn_bills_Click(sender, e);
+            Btn_customer_oil_sales_bill_Click(sender, e);
+        }
+
+        private void فاتورةتسليمالزيتللتجارToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Btn_bills_Click(sender, e);
+            Btn_oil_delivery_bill_to_dealers_Click(sender, e);
+        }
+
+
+
         //################################test
 
 

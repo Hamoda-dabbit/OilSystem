@@ -12,9 +12,16 @@ namespace OilManegment.PL.UserControls
 {
     public partial class Birin : UserControl
     {
+        private PL.Forms.InternalForms.Select_customer frm_selctClient = new Forms.InternalForms.Select_customer();
         public Birin()
         {
             InitializeComponent();
+        }
+
+
+        private void Btn_open_customerNameForm_Click(object sender, EventArgs e)
+        {
+            frm_selctClient.ShowDialog();
         }
     }
 }

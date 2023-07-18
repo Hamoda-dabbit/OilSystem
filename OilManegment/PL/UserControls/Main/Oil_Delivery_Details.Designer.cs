@@ -33,41 +33,42 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btn_open_CustomerNameForm = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txt_wage_ratio = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txt_tankNumber = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txt_land = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.txt_remain = new System.Windows.Forms.TextBox();
+            this.txt_total = new System.Windows.Forms.TextBox();
+            this.txt_paid = new System.Windows.Forms.TextBox();
+            this.txt_total_tank_price = new System.Windows.Forms.TextBox();
             this.label35 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txt_recipient_tank = new System.Windows.Forms.TextBox();
+            this.txt_squeez_wages_KG = new System.Windows.Forms.TextBox();
             this.label32 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txt_tank_price = new System.Windows.Forms.TextBox();
             this.label31 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txt_new_tankNumber = new System.Windows.Forms.TextBox();
+            this.txt_total_weight = new System.Windows.Forms.TextBox();
+            this.txt_squeez_wages_D = new System.Windows.Forms.TextBox();
             this.label30 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txt_regin = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_customerName = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.txtName = new System.Windows.Forms.TextBox();
+            this.txt_movementNumber = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -98,6 +99,7 @@
             this.btn_refresh = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.btn_open_movementNumberForm = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -161,51 +163,65 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btn_open_movementNumberForm);
+            this.groupBox1.Controls.Add(this.btn_open_CustomerNameForm);
             this.groupBox1.Controls.Add(this.dateTimePicker1);
-            this.groupBox1.Controls.Add(this.textBox6);
+            this.groupBox1.Controls.Add(this.txt_wage_ratio);
             this.groupBox1.Controls.Add(this.label24);
-            this.groupBox1.Controls.Add(this.textBox7);
+            this.groupBox1.Controls.Add(this.txt_tankNumber);
             this.groupBox1.Controls.Add(this.label25);
-            this.groupBox1.Controls.Add(this.textBox8);
+            this.groupBox1.Controls.Add(this.txt_land);
             this.groupBox1.Controls.Add(this.label26);
             this.groupBox1.Controls.Add(this.label28);
-            this.groupBox1.Controls.Add(this.textBox16);
-            this.groupBox1.Controls.Add(this.textBox14);
-            this.groupBox1.Controls.Add(this.textBox15);
-            this.groupBox1.Controls.Add(this.textBox10);
+            this.groupBox1.Controls.Add(this.txt_remain);
+            this.groupBox1.Controls.Add(this.txt_total);
+            this.groupBox1.Controls.Add(this.txt_paid);
+            this.groupBox1.Controls.Add(this.txt_total_tank_price);
             this.groupBox1.Controls.Add(this.label35);
             this.groupBox1.Controls.Add(this.label34);
             this.groupBox1.Controls.Add(this.label33);
             this.groupBox1.Controls.Add(this.label29);
             this.groupBox1.Controls.Add(this.textBox13);
-            this.groupBox1.Controls.Add(this.textBox12);
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.txt_recipient_tank);
+            this.groupBox1.Controls.Add(this.txt_squeez_wages_KG);
             this.groupBox1.Controls.Add(this.label32);
-            this.groupBox1.Controls.Add(this.textBox9);
+            this.groupBox1.Controls.Add(this.txt_tank_price);
             this.groupBox1.Controls.Add(this.label31);
             this.groupBox1.Controls.Add(this.label21);
             this.groupBox1.Controls.Add(this.label23);
-            this.groupBox1.Controls.Add(this.textBox11);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox5);
+            this.groupBox1.Controls.Add(this.txt_new_tankNumber);
+            this.groupBox1.Controls.Add(this.txt_total_weight);
+            this.groupBox1.Controls.Add(this.txt_squeez_wages_D);
             this.groupBox1.Controls.Add(this.label30);
             this.groupBox1.Controls.Add(this.label22);
             this.groupBox1.Controls.Add(this.label18);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.txt_regin);
             this.groupBox1.Controls.Add(this.label20);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txt_customerName);
             this.groupBox1.Controls.Add(this.label19);
-            this.groupBox1.Controls.Add(this.txtName);
+            this.groupBox1.Controls.Add(this.txt_movementNumber);
             this.groupBox1.Controls.Add(this.label27);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 19F, System.Drawing.FontStyle.Bold);
             this.groupBox1.Location = new System.Drawing.Point(0, 37);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.groupBox1.Size = new System.Drawing.Size(1153, 360);
+            this.groupBox1.Size = new System.Drawing.Size(1153, 400);
             this.groupBox1.TabIndex = 206;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "بيانات الحركة";
+            // 
+            // btn_open_CustomerNameForm
+            // 
+            this.btn_open_CustomerNameForm.FlatAppearance.BorderSize = 0;
+            this.btn_open_CustomerNameForm.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
+            this.btn_open_CustomerNameForm.Location = new System.Drawing.Point(968, 70);
+            this.btn_open_CustomerNameForm.Name = "btn_open_CustomerNameForm";
+            this.btn_open_CustomerNameForm.Size = new System.Drawing.Size(46, 35);
+            this.btn_open_CustomerNameForm.TabIndex = 217;
+            this.btn_open_CustomerNameForm.Text = "...";
+            this.btn_open_CustomerNameForm.UseVisualStyleBackColor = true;
+            this.btn_open_CustomerNameForm.Click += new System.EventHandler(this.Btn_open_CustomerNameForm_Click);
             // 
             // dateTimePicker1
             // 
@@ -216,74 +232,71 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(340, 35);
             this.dateTimePicker1.TabIndex = 24;
             // 
-            // textBox6
+            // txt_wage_ratio
             // 
-            this.textBox6.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox6.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
-            this.textBox6.Location = new System.Drawing.Point(17, 138);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.ReadOnly = true;
-            this.textBox6.Size = new System.Drawing.Size(340, 35);
-            this.textBox6.TabIndex = 23;
-            this.textBox6.Text = "0";
-            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_wage_ratio.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txt_wage_ratio.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_wage_ratio.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.txt_wage_ratio.Location = new System.Drawing.Point(17, 155);
+            this.txt_wage_ratio.Name = "txt_wage_ratio";
+            this.txt_wage_ratio.Size = new System.Drawing.Size(340, 35);
+            this.txt_wage_ratio.TabIndex = 23;
+            this.txt_wage_ratio.Text = "0";
+            this.txt_wage_ratio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label24
             // 
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
             this.label24.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label24.Location = new System.Drawing.Point(383, 140);
+            this.label24.Location = new System.Drawing.Point(383, 157);
             this.label24.Name = "label24";
             this.label24.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label24.Size = new System.Drawing.Size(153, 26);
             this.label24.TabIndex = 22;
             this.label24.Text = "نسبة الأجور % :";
             // 
-            // textBox7
+            // txt_tankNumber
             // 
-            this.textBox7.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox7.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
-            this.textBox7.Location = new System.Drawing.Point(17, 102);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.ReadOnly = true;
-            this.textBox7.Size = new System.Drawing.Size(340, 35);
-            this.textBox7.TabIndex = 21;
-            this.textBox7.Text = "0";
-            this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_tankNumber.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txt_tankNumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_tankNumber.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.txt_tankNumber.Location = new System.Drawing.Point(17, 113);
+            this.txt_tankNumber.Name = "txt_tankNumber";
+            this.txt_tankNumber.Size = new System.Drawing.Size(340, 35);
+            this.txt_tankNumber.TabIndex = 21;
+            this.txt_tankNumber.Text = "0";
+            this.txt_tankNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label25
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
             this.label25.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label25.Location = new System.Drawing.Point(386, 107);
+            this.label25.Location = new System.Drawing.Point(386, 118);
             this.label25.Name = "label25";
             this.label25.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label25.Size = new System.Drawing.Size(93, 26);
             this.label25.TabIndex = 20;
             this.label25.Text = "عدد التنك:";
             // 
-            // textBox8
+            // txt_land
             // 
-            this.textBox8.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox8.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
-            this.textBox8.Location = new System.Drawing.Point(17, 66);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.ReadOnly = true;
-            this.textBox8.Size = new System.Drawing.Size(340, 35);
-            this.textBox8.TabIndex = 19;
-            this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_land.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txt_land.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_land.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.txt_land.Location = new System.Drawing.Point(17, 72);
+            this.txt_land.Name = "txt_land";
+            this.txt_land.Size = new System.Drawing.Size(340, 35);
+            this.txt_land.TabIndex = 19;
+            this.txt_land.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label26
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
             this.label26.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label26.Location = new System.Drawing.Point(386, 72);
+            this.label26.Location = new System.Drawing.Point(386, 78);
             this.label26.Name = "label26";
             this.label26.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label26.Size = new System.Drawing.Size(73, 26);
@@ -302,62 +315,56 @@
             this.label28.TabIndex = 16;
             this.label28.Text = "التاريخ:";
             // 
-            // textBox16
+            // txt_remain
             // 
-            this.textBox16.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.textBox16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox16.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
-            this.textBox16.Location = new System.Drawing.Point(17, 316);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.ReadOnly = true;
-            this.textBox16.Size = new System.Drawing.Size(340, 35);
-            this.textBox16.TabIndex = 15;
-            this.textBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_remain.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txt_remain.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_remain.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.txt_remain.Location = new System.Drawing.Point(17, 359);
+            this.txt_remain.Name = "txt_remain";
+            this.txt_remain.Size = new System.Drawing.Size(340, 35);
+            this.txt_remain.TabIndex = 15;
+            this.txt_remain.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox14
+            // txt_total
             // 
-            this.textBox14.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.textBox14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox14.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
-            this.textBox14.Location = new System.Drawing.Point(17, 283);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.ReadOnly = true;
-            this.textBox14.Size = new System.Drawing.Size(340, 35);
-            this.textBox14.TabIndex = 15;
-            this.textBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_total.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txt_total.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_total.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.txt_total.Location = new System.Drawing.Point(17, 321);
+            this.txt_total.Name = "txt_total";
+            this.txt_total.Size = new System.Drawing.Size(340, 35);
+            this.txt_total.TabIndex = 15;
+            this.txt_total.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox15
+            // txt_paid
             // 
-            this.textBox15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox15.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.textBox15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox15.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
-            this.textBox15.Location = new System.Drawing.Point(626, 316);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.ReadOnly = true;
-            this.textBox15.Size = new System.Drawing.Size(340, 35);
-            this.textBox15.TabIndex = 15;
-            this.textBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_paid.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txt_paid.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_paid.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.txt_paid.Location = new System.Drawing.Point(626, 359);
+            this.txt_paid.Name = "txt_paid";
+            this.txt_paid.Size = new System.Drawing.Size(340, 35);
+            this.txt_paid.TabIndex = 15;
+            this.txt_paid.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox10
+            // txt_total_tank_price
             // 
-            this.textBox10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox10.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox10.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
-            this.textBox10.Location = new System.Drawing.Point(626, 278);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.ReadOnly = true;
-            this.textBox10.Size = new System.Drawing.Size(340, 35);
-            this.textBox10.TabIndex = 15;
-            this.textBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_total_tank_price.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txt_total_tank_price.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_total_tank_price.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.txt_total_tank_price.Location = new System.Drawing.Point(626, 316);
+            this.txt_total_tank_price.Name = "txt_total_tank_price";
+            this.txt_total_tank_price.Size = new System.Drawing.Size(340, 35);
+            this.txt_total_tank_price.TabIndex = 15;
+            this.txt_total_tank_price.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label35
             // 
             this.label35.AutoSize = true;
             this.label35.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
             this.label35.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label35.Location = new System.Drawing.Point(386, 319);
+            this.label35.Location = new System.Drawing.Point(386, 362);
             this.label35.Name = "label35";
             this.label35.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label35.Size = new System.Drawing.Size(77, 26);
@@ -366,11 +373,10 @@
             // 
             // label34
             // 
-            this.label34.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label34.AutoSize = true;
             this.label34.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
             this.label34.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label34.Location = new System.Drawing.Point(991, 319);
+            this.label34.Location = new System.Drawing.Point(991, 362);
             this.label34.Name = "label34";
             this.label34.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label34.Size = new System.Drawing.Size(80, 26);
@@ -382,7 +388,7 @@
             this.label33.AutoSize = true;
             this.label33.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
             this.label33.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label33.Location = new System.Drawing.Point(386, 285);
+            this.label33.Location = new System.Drawing.Point(386, 323);
             this.label33.Name = "label33";
             this.label33.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label33.Size = new System.Drawing.Size(86, 26);
@@ -391,11 +397,10 @@
             // 
             // label29
             // 
-            this.label29.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label29.AutoSize = true;
             this.label29.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
             this.label29.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label29.Location = new System.Drawing.Point(991, 281);
+            this.label29.Location = new System.Drawing.Point(991, 319);
             this.label29.Name = "label29";
             this.label29.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label29.Size = new System.Drawing.Size(158, 26);
@@ -407,71 +412,65 @@
             this.textBox13.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.textBox13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox13.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
-            this.textBox13.Location = new System.Drawing.Point(17, 176);
+            this.textBox13.Location = new System.Drawing.Point(17, 198);
             this.textBox13.Name = "textBox13";
-            this.textBox13.ReadOnly = true;
             this.textBox13.Size = new System.Drawing.Size(340, 35);
             this.textBox13.TabIndex = 15;
             this.textBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox12
+            // txt_recipient_tank
             // 
-            this.textBox12.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.textBox12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox12.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
-            this.textBox12.Location = new System.Drawing.Point(17, 247);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.ReadOnly = true;
-            this.textBox12.Size = new System.Drawing.Size(340, 35);
-            this.textBox12.TabIndex = 13;
-            this.textBox12.Text = "0";
-            this.textBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_recipient_tank.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txt_recipient_tank.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_recipient_tank.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.txt_recipient_tank.Location = new System.Drawing.Point(17, 279);
+            this.txt_recipient_tank.Name = "txt_recipient_tank";
+            this.txt_recipient_tank.Size = new System.Drawing.Size(340, 35);
+            this.txt_recipient_tank.TabIndex = 13;
+            this.txt_recipient_tank.Text = "0";
+            this.txt_recipient_tank.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox3
+            // txt_squeez_wages_KG
             // 
-            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
-            this.textBox3.Location = new System.Drawing.Point(626, 171);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(340, 35);
-            this.textBox3.TabIndex = 15;
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_squeez_wages_KG.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txt_squeez_wages_KG.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_squeez_wages_KG.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.txt_squeez_wages_KG.Location = new System.Drawing.Point(626, 193);
+            this.txt_squeez_wages_KG.Name = "txt_squeez_wages_KG";
+            this.txt_squeez_wages_KG.Size = new System.Drawing.Size(340, 35);
+            this.txt_squeez_wages_KG.TabIndex = 15;
+            this.txt_squeez_wages_KG.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label32
             // 
             this.label32.AutoSize = true;
             this.label32.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
             this.label32.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label32.Location = new System.Drawing.Point(384, 178);
+            this.label32.Location = new System.Drawing.Point(384, 200);
             this.label32.Name = "label32";
             this.label32.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label32.Size = new System.Drawing.Size(116, 26);
             this.label32.TabIndex = 14;
             this.label32.Text = "سعر 1 ك.غ :";
             // 
-            // textBox9
+            // txt_tank_price
             // 
-            this.textBox9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox9.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox9.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
-            this.textBox9.Location = new System.Drawing.Point(626, 243);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.ReadOnly = true;
-            this.textBox9.Size = new System.Drawing.Size(340, 35);
-            this.textBox9.TabIndex = 13;
-            this.textBox9.Text = "0";
-            this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_tank_price.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txt_tank_price.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_tank_price.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.txt_tank_price.Location = new System.Drawing.Point(626, 275);
+            this.txt_tank_price.Name = "txt_tank_price";
+            this.txt_tank_price.Size = new System.Drawing.Size(340, 35);
+            this.txt_tank_price.TabIndex = 13;
+            this.txt_tank_price.Text = "0";
+            this.txt_tank_price.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label31
             // 
             this.label31.AutoSize = true;
             this.label31.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
             this.label31.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label31.Location = new System.Drawing.Point(386, 247);
+            this.label31.Location = new System.Drawing.Point(386, 279);
             this.label31.Name = "label31";
             this.label31.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label31.Size = new System.Drawing.Size(115, 26);
@@ -480,11 +479,10 @@
             // 
             // label21
             // 
-            this.label21.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
             this.label21.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label21.Location = new System.Drawing.Point(989, 173);
+            this.label21.Location = new System.Drawing.Point(989, 195);
             this.label21.Name = "label21";
             this.label21.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label21.Size = new System.Drawing.Size(171, 26);
@@ -493,62 +491,56 @@
             // 
             // label23
             // 
-            this.label23.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
             this.label23.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label23.Location = new System.Drawing.Point(991, 243);
+            this.label23.Location = new System.Drawing.Point(991, 275);
             this.label23.Name = "label23";
             this.label23.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label23.Size = new System.Drawing.Size(104, 26);
             this.label23.TabIndex = 12;
             this.label23.Text = "سعر التنكة:";
             // 
-            // textBox11
+            // txt_new_tankNumber
             // 
-            this.textBox11.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox11.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
-            this.textBox11.Location = new System.Drawing.Point(17, 211);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.ReadOnly = true;
-            this.textBox11.Size = new System.Drawing.Size(340, 35);
-            this.textBox11.TabIndex = 11;
-            this.textBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_new_tankNumber.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txt_new_tankNumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_new_tankNumber.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.txt_new_tankNumber.Location = new System.Drawing.Point(17, 238);
+            this.txt_new_tankNumber.Name = "txt_new_tankNumber";
+            this.txt_new_tankNumber.Size = new System.Drawing.Size(340, 35);
+            this.txt_new_tankNumber.TabIndex = 11;
+            this.txt_new_tankNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox4
+            // txt_total_weight
             // 
-            this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox4.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
-            this.textBox4.Location = new System.Drawing.Point(626, 135);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(340, 35);
-            this.textBox4.TabIndex = 13;
-            this.textBox4.Text = "0";
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_total_weight.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txt_total_weight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_total_weight.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.txt_total_weight.Location = new System.Drawing.Point(626, 152);
+            this.txt_total_weight.Name = "txt_total_weight";
+            this.txt_total_weight.Size = new System.Drawing.Size(340, 35);
+            this.txt_total_weight.TabIndex = 13;
+            this.txt_total_weight.Text = "0";
+            this.txt_total_weight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox5
+            // txt_squeez_wages_D
             // 
-            this.textBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox5.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
-            this.textBox5.Location = new System.Drawing.Point(626, 207);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(340, 35);
-            this.textBox5.TabIndex = 11;
-            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_squeez_wages_D.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txt_squeez_wages_D.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_squeez_wages_D.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.txt_squeez_wages_D.Location = new System.Drawing.Point(626, 234);
+            this.txt_squeez_wages_D.Name = "txt_squeez_wages_D";
+            this.txt_squeez_wages_D.Size = new System.Drawing.Size(340, 35);
+            this.txt_squeez_wages_D.TabIndex = 11;
+            this.txt_squeez_wages_D.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label30
             // 
             this.label30.AutoSize = true;
             this.label30.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
             this.label30.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label30.Location = new System.Drawing.Point(386, 213);
+            this.label30.Location = new System.Drawing.Point(386, 240);
             this.label30.Name = "label30";
             this.label30.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label30.Size = new System.Drawing.Size(146, 26);
@@ -557,11 +549,10 @@
             // 
             // label22
             // 
-            this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
             this.label22.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label22.Location = new System.Drawing.Point(992, 140);
+            this.label22.Location = new System.Drawing.Point(992, 157);
             this.label22.Name = "label22";
             this.label22.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label22.Size = new System.Drawing.Size(137, 26);
@@ -570,89 +561,79 @@
             // 
             // label18
             // 
-            this.label18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
             this.label18.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label18.Location = new System.Drawing.Point(991, 209);
+            this.label18.Location = new System.Drawing.Point(991, 236);
             this.label18.Name = "label18";
             this.label18.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label18.Size = new System.Drawing.Size(138, 26);
             this.label18.TabIndex = 10;
             this.label18.Text = "أجور العصر $ :";
             // 
-            // textBox2
+            // txt_regin
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
-            this.textBox2.Location = new System.Drawing.Point(626, 100);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(340, 35);
-            this.textBox2.TabIndex = 11;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_regin.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txt_regin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_regin.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.txt_regin.Location = new System.Drawing.Point(626, 111);
+            this.txt_regin.Name = "txt_regin";
+            this.txt_regin.Size = new System.Drawing.Size(340, 35);
+            this.txt_regin.TabIndex = 11;
+            this.txt_regin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label20
             // 
-            this.label20.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
             this.label20.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label20.Location = new System.Drawing.Point(992, 104);
+            this.label20.Location = new System.Drawing.Point(992, 115);
             this.label20.Name = "label20";
             this.label20.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label20.Size = new System.Drawing.Size(79, 26);
             this.label20.TabIndex = 10;
             this.label20.Text = "المنطقة:";
             // 
-            // textBox1
+            // txt_customerName
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
-            this.textBox1.Location = new System.Drawing.Point(626, 64);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(340, 35);
-            this.textBox1.TabIndex = 9;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_customerName.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txt_customerName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_customerName.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.txt_customerName.Location = new System.Drawing.Point(626, 70);
+            this.txt_customerName.Name = "txt_customerName";
+            this.txt_customerName.Size = new System.Drawing.Size(340, 35);
+            this.txt_customerName.TabIndex = 9;
+            this.txt_customerName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label19
             // 
-            this.label19.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
             this.label19.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label19.Location = new System.Drawing.Point(992, 68);
+            this.label19.Location = new System.Drawing.Point(1017, 74);
             this.label19.Name = "label19";
             this.label19.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label19.Size = new System.Drawing.Size(107, 26);
             this.label19.TabIndex = 8;
             this.label19.Text = "اسم الزبون:";
             // 
-            // txtName
+            // txt_movementNumber
             // 
-            this.txtName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtName.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txtName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtName.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
-            this.txtName.Location = new System.Drawing.Point(626, 29);
-            this.txtName.Name = "txtName";
-            this.txtName.ReadOnly = true;
-            this.txtName.Size = new System.Drawing.Size(340, 35);
-            this.txtName.TabIndex = 7;
-            this.txtName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_movementNumber.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txt_movementNumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_movementNumber.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.txt_movementNumber.Location = new System.Drawing.Point(626, 29);
+            this.txt_movementNumber.Name = "txt_movementNumber";
+            this.txt_movementNumber.Size = new System.Drawing.Size(340, 35);
+            this.txt_movementNumber.TabIndex = 7;
+            this.txt_movementNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label27
             // 
-            this.label27.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
             this.label27.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label27.Location = new System.Drawing.Point(992, 33);
+            this.label27.Location = new System.Drawing.Point(1014, 33);
             this.label27.Name = "label27";
             this.label27.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label27.Size = new System.Drawing.Size(105, 26);
@@ -663,9 +644,9 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 397);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 437);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1153, 213);
+            this.dataGridView1.Size = new System.Drawing.Size(1153, 173);
             this.dataGridView1.TabIndex = 215;
             // 
             // panel4
@@ -1053,17 +1034,30 @@
             this.label8.Size = new System.Drawing.Size(0, 20);
             this.label8.TabIndex = 3;
             // 
+            // btn_open_movementNumberForm
+            // 
+            this.btn_open_movementNumberForm.FlatAppearance.BorderSize = 0;
+            this.btn_open_movementNumberForm.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
+            this.btn_open_movementNumberForm.Location = new System.Drawing.Point(968, 28);
+            this.btn_open_movementNumberForm.Name = "btn_open_movementNumberForm";
+            this.btn_open_movementNumberForm.Size = new System.Drawing.Size(46, 35);
+            this.btn_open_movementNumberForm.TabIndex = 220;
+            this.btn_open_movementNumberForm.Text = "...";
+            this.btn_open_movementNumberForm.UseVisualStyleBackColor = true;
+            this.btn_open_movementNumberForm.Click += new System.EventHandler(this.Btn_open_movementNumberForm_Click);
+            // 
             // Oil_Delivery_Details
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 26F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
             this.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.Margin = new System.Windows.Forms.Padding(7);
             this.Name = "Oil_Delivery_Details";
             this.Size = new System.Drawing.Size(1153, 674);
             this.panel1.ResumeLayout(false);
@@ -1097,40 +1091,40 @@
         public System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txt_wage_ratio;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txt_tankNumber;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txt_land;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox txt_total;
+        private System.Windows.Forms.TextBox txt_paid;
+        private System.Windows.Forms.TextBox txt_total_tank_price;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txt_recipient_tank;
+        private System.Windows.Forms.TextBox txt_squeez_wages_KG;
         private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txt_tank_price;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txt_new_tankNumber;
+        private System.Windows.Forms.TextBox txt_total_weight;
+        private System.Windows.Forms.TextBox txt_squeez_wages_D;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txt_regin;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_customerName;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.TextBox txt_movementNumber;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.TextBox txt_remain;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Panel panel4;
@@ -1161,5 +1155,7 @@
         public System.Windows.Forms.Button btn_refresh;
         public System.Windows.Forms.Label label7;
         public System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button btn_open_CustomerNameForm;
+        private System.Windows.Forms.Button btn_open_movementNumberForm;
     }
 }

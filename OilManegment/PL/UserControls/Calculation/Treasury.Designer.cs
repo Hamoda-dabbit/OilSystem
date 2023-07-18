@@ -41,7 +41,6 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txt_serch = new System.Windows.Forms.TextBox();
             this.label28 = new System.Windows.Forms.Label();
@@ -74,6 +73,7 @@
             this.btn_refresh = new System.Windows.Forms.Button();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
+            this.btn_open_EmployeeForm = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -138,7 +138,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button3);
+            this.groupBox1.Controls.Add(this.btn_open_EmployeeForm);
             this.groupBox1.Controls.Add(this.textBox8);
             this.groupBox1.Controls.Add(this.label26);
             this.groupBox1.Controls.Add(this.label5);
@@ -163,7 +163,7 @@
             this.textBox8.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox8.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
-            this.textBox8.Location = new System.Drawing.Point(697, 76);
+            this.textBox8.Location = new System.Drawing.Point(696, 76);
             this.textBox8.Name = "textBox8";
             this.textBox8.ReadOnly = true;
             this.textBox8.Size = new System.Drawing.Size(288, 35);
@@ -199,7 +199,7 @@
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
             this.label19.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label19.Location = new System.Drawing.Point(991, 37);
+            this.label19.Location = new System.Drawing.Point(990, 37);
             this.label19.Name = "label19";
             this.label19.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label19.Size = new System.Drawing.Size(106, 26);
@@ -223,7 +223,7 @@
             this.textBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
-            this.textBox1.Location = new System.Drawing.Point(697, 35);
+            this.textBox1.Location = new System.Drawing.Point(696, 35);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(288, 35);
@@ -253,17 +253,6 @@
             this.label4.Size = new System.Drawing.Size(121, 26);
             this.label4.TabIndex = 50;
             this.label4.Text = "رصيد الخزنة:";
-            // 
-            // button3
-            // 
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.button3.Location = new System.Drawing.Point(436, 72);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(33, 32);
-            this.button3.TabIndex = 51;
-            this.button3.Text = "...";
-            this.button3.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
@@ -697,17 +686,30 @@
             this.label24.Size = new System.Drawing.Size(0, 20);
             this.label24.TabIndex = 3;
             // 
+            // btn_open_EmployeeForm
+            // 
+            this.btn_open_EmployeeForm.FlatAppearance.BorderSize = 0;
+            this.btn_open_EmployeeForm.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
+            this.btn_open_EmployeeForm.Location = new System.Drawing.Point(436, 76);
+            this.btn_open_EmployeeForm.Name = "btn_open_EmployeeForm";
+            this.btn_open_EmployeeForm.Size = new System.Drawing.Size(46, 35);
+            this.btn_open_EmployeeForm.TabIndex = 221;
+            this.btn_open_EmployeeForm.Text = "...";
+            this.btn_open_EmployeeForm.UseVisualStyleBackColor = true;
+            this.btn_open_EmployeeForm.Click += new System.EventHandler(this.Btn_open_EmployeeForm_Click);
+            // 
             // Treasury
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 26F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
-            this.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.Margin = new System.Windows.Forms.Padding(7);
             this.Name = "Treasury";
             this.Size = new System.Drawing.Size(1153, 674);
             this.panel1.ResumeLayout(false);
@@ -750,7 +752,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox txt_serch;
         private System.Windows.Forms.Label label28;
@@ -783,5 +784,6 @@
         public System.Windows.Forms.Button btn_refresh;
         public System.Windows.Forms.Label label23;
         public System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Button btn_open_EmployeeForm;
     }
 }

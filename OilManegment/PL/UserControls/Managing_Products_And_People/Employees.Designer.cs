@@ -209,10 +209,9 @@
             this.textBox5.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
             this.textBox5.Location = new System.Drawing.Point(245, 126);
             this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
             this.textBox5.Size = new System.Drawing.Size(288, 35);
             this.textBox5.TabIndex = 19;
-            this.textBox5.Text = "المرتب:";
+            this.textBox5.Text = "0";
             this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label6
@@ -223,9 +222,9 @@
             this.label6.Location = new System.Drawing.Point(540, 128);
             this.label6.Name = "label6";
             this.label6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label6.Size = new System.Drawing.Size(104, 26);
+            this.label6.Size = new System.Drawing.Size(74, 26);
             this.label6.TabIndex = 50;
-            this.label6.Text = "عليه أموال:";
+            this.label6.Text = "المرتب:";
             // 
             // label26
             // 
@@ -270,7 +269,6 @@
             this.textBox4.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
             this.textBox4.Location = new System.Drawing.Point(245, 74);
             this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
             this.textBox4.Size = new System.Drawing.Size(288, 35);
             this.textBox4.TabIndex = 18;
             this.textBox4.Text = "0";
@@ -283,7 +281,6 @@
             this.textBox1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
             this.textBox1.Location = new System.Drawing.Point(697, 74);
             this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(288, 35);
             this.textBox1.TabIndex = 11;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -295,7 +292,6 @@
             this.textBox3.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
             this.textBox3.Location = new System.Drawing.Point(245, 33);
             this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
             this.textBox3.Size = new System.Drawing.Size(288, 35);
             this.textBox3.TabIndex = 17;
             this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -319,7 +315,6 @@
             this.txtName.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
             this.txtName.Location = new System.Drawing.Point(697, 33);
             this.txtName.Name = "txtName";
-            this.txtName.ReadOnly = true;
             this.txtName.Size = new System.Drawing.Size(288, 35);
             this.txtName.TabIndex = 10;
             this.txtName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -358,7 +353,6 @@
             this.txt_serch.ForeColor = System.Drawing.SystemColors.WindowText;
             this.txt_serch.Location = new System.Drawing.Point(84, 36);
             this.txt_serch.Name = "txt_serch";
-            this.txt_serch.ReadOnly = true;
             this.txt_serch.Size = new System.Drawing.Size(702, 35);
             this.txt_serch.TabIndex = 7;
             this.txt_serch.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -773,12 +767,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 26F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.ForeColor = System.Drawing.SystemColors.WindowText;
             this.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.Name = "Employees";
             this.Size = new System.Drawing.Size(1153, 674);

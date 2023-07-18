@@ -12,9 +12,27 @@ namespace OilManegment.PL.UserControls.Bills
 {
     public partial class Sales_Bills : UserControl
     {
+        private PL.Forms.InternalForms.Select_customer frm_selctClient = new Forms.InternalForms.Select_customer();
+        private PL.Forms.InternalForms.Select_employee frm_selectEmployee = new Forms.InternalForms.Select_employee();
+        private PL.Forms.InternalForms.Select_store frm_selectStore = new Forms.InternalForms.Select_store();
         public Sales_Bills()
         {
             InitializeComponent();
+        }
+
+        private void Btn_open_CustomerNameForm_Click(object sender, EventArgs e)
+        {
+            frm_selctClient.ShowDialog();
+        }
+
+        private void Btn_open_EmployeeForm_Click(object sender, EventArgs e)
+        {
+            frm_selectEmployee.ShowDialog();
+        }
+
+        private void Btn_open_StoreForm_Click(object sender, EventArgs e)
+        {
+            frm_selectStore.ShowDialog();
         }
     }
 }
